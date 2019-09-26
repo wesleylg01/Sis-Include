@@ -1,0 +1,83 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>TVideoGrabber simple demo</title>
+
+<script language="VBScript">
+
+Sub StartPreview
+   VideoGrabber.VideoSource = 4  ' vs_IPCamera = 4, you can find the values of the constants in the 
+   VideoGrabber.SetAuthentication 1, document.all("edtUserName").Value, document.all("edtPassword").Value
+   VideoGrabber.IPCameraUrl = document.all("edtIPCameraUrl").Value
+   VideoGrabber.StartPreview
+End Sub
+
+Sub StopPreview
+   VideoGrabber.StopPreview
+End Sub
+
+Sub VideoGrabber_OnPreviewStarted
+   MsgBox "Preview started!"
+end sub
+
+Sub VideoGrabber_OnResize
+   VideoGrabber.Width  = VideoGrabber.VideoWidth
+   VideoGrabber.Height = VideoGrabber.VideoHeight
+end sub
+
+</script >
+
+</head>
+
+<body style="font-family: Verdana; font-size: 10 pt">
+
+<p><b><font size="3">TVideoGrabber ActiveX component</font></b></p>
+
+<p><font size="3" face="Arial">This is a simple demo of TVideoGrabber previewing
+an IP camera with username/password authentication </font></p>
+
+
+<form>
+ <table border="0">
+  <tr>
+    <td><font size="3" face="Arial">IP camera URL:</font></td>
+    <td><font size="3" face="Arial"><INPUT TYPE="text" VALUE="" name = "edtIPCameraUrl" size = "100"> </font></td>
+  </tr>
+  <tr>
+    <td><font size="3" face="Arial">username: </font></td>
+    <td><font size="3" face="Arial"><INPUT TYPE="text" name = "edtUserName" size = "20"> </font></td>
+  </tr>
+  <tr>
+    <td><font size="3" face="Arial">password:</font></td>
+    <td><font size="3" face="Arial"><INPUT TYPE="password" name = "edtPassword" size = "20"> </font></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><font size="3" face="Arial"><INPUT TYPE="button" VALUE="Start preview" onClick="StartPreview" name="BtnStartPreview"> </font></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><font size="3" face="Arial"><INPUT TYPE="button" VALUE="Stop Preview" onClick="StopPreview" name="BtnStopPreview"> </font></td>
+  </tr>
+ </table>
+  </FORM> 
+
+<font size="3" face="Arial">
+
+<OBJECT ID="VideoGrabber" WIDTH = 323 HEIGHT = 230
+    CLASSID="CLSID:B7A1B3FE-59CB-4C8E-81CC-FFC6EC6834DE">
+</OBJECT>
+
+
+
+</font>
+
+
+
+</body>
+
+</html>

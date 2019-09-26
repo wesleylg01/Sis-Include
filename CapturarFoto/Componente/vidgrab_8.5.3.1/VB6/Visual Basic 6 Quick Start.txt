@@ -1,0 +1,26 @@
+
+ Visual Basic 6 quick start guide
+ ================================
+
+ PLACING A NEW TVIDEOGRABBER ON A FORM
+ ------------------------------------- 
+
+ - create a "Stardard EXE" VB application (or re-open an existing application)
+ - right-click on the Toolbox
+ - click "Components"
+ - browse the "Controls" list, locate the "vidgrab_VB6 library", and check the checkbox on the left
+ - click "OK"
+ - now you should see the TVideoGrabber component in the toolbox
+ - simply drag and drop the TVideoGrabber component on the form
+
+
+ INVOKING THE TVIDEOGRABBER COMPONENT
+ ------------------------------------
+
+ - place a button on the form
+ - double-click on the button
+ - put the following code, e.g.:
+
+   Private Sub Command1_Click()
+      VideoGrabberVB61.StartPreview
+   End Sub

@@ -1,0 +1,82 @@
+
+ TVideoGrabber Video Capture and Media Player component
+ ------------------------------------------------------
+
+ version        : v8.5 build 8.5.3.1
+ date           : October 10, 2011
+
+ status         : Evaluation package
+ limitations    : nag-screens, stops after a random time
+
+ system req.    : Windows 7 / Windows Vista / XP
+                  2Gb memory or more
+ home page      : http://www.datastead.com
+ contact        : contact@datastead.com
+ support        : support@datastead.com
+ 
+
+ USER GUIDE
+ ==========
+
+ The user guide is located in the "TVideoGrabber.chm" file of the \Help folder.
+
+
+ PACKAGE INSTALL
+ ===============
+
+ NOTE: if you get an error when installing TVideoGrabber on the component palette, probably that you
+ need to apply a Delphi update pack (see details in the "UPDATE PACKS" chapter below).
+
+
+ - Exit Delphi,
+
+ - unzip the package archive to a folder of your choice (e.g. c:\vidgrab). Be sure to unzip 
+   the full directory structure (using WinZip check "use folders names" ).
+
+-  locate the RadStudio\n.0\ folder corresponding to the version used ("n" is the version number, e.g. RadStudio\9.0\'), usually:
+   C:\Program Files\Embarcadero\RAD Studio\n.0\ on 32 bits platforms
+   C:\Program Files (x86)\Embarcadero\RAD Studio\n.0\ on 64 bits platforms
+   
+ - copy the TVidGrab.bpl and TVidGrab.dcp files to "RAD Studio\n.0\Imports"
+ 
+ - copy the following files to "RAD Studio\n.0\lib\Win32":
+   Win32\TVidGrab.dcu
+   Win32\VidGrab.dcu
+   Win32\VidGrab.res 
+ 
+  - copy the following files to "RAD Studio\n.0\lib\Win64"
+   Win64\TVidGrab.dcu
+   Win64\VidGrab.dcu
+   Win64\VidGrab.res 
+
+ - run Delphi,
+
+ - select Component | Install packages,
+
+ - press the "Add" button,
+
+ - locate the TVidGrab.bpl file in the "RAD Studio\n.0\Imports" directory and select it,
+
+ - Select Open
+
+ - Click "Ok"
+
+ - Check the "Datastead" tab in the right of the component palette. The TVideoGrabber object should have been added.
+
+
+  INSTALL TROUBLESHOOTING:
+ =======================
+
+ "TVidGrab.??? file not found" error when compiling or linking a TVideoGrabber project:
+ - go to Tools | Environment Options | Library, and check that there is ";$(DELPHI)\Imports (Delphi)"
+   in the Library path, otherwise add it at the end of the edit field.  
+
+ - go to Project | Options | Packages, check "Build with runtime package", go to the end of the 
+   packages edit field, remove ";TVidGrab", and then uncheck "Build with runtime package". 
+
+
+ PACKAGE UNZIP:
+ =============
+ When unzipping the package, the unzip tool must re-create the package's subdirectories. By using WinZip, 
+ be sure to enable the "use folder names" option, otherwise files having the same name will overwrite themselves.
+

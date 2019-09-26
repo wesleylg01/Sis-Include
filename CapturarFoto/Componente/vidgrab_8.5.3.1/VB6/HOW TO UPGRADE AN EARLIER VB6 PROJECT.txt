@@ -1,0 +1,25 @@
+
+ If you have designed a project with an earlier version of vidgrab_VB6.ocx and you get an error saying "unable to load...", proceed as follows:
+
+
+ 1. exit VB6, then open your project's ".VBP" file with notepad
+
+ 2. locate the line that begins by "Object..." and ends by vidgrab_VB6.ocx
+
+ 3. replace it by this line (vidgrab_VB6.ocx WITHOUT QUOTES) :
+
+    Object={FF3B1F41-D145-4555-B361-92A5E6DAE70D}#1.0#0; vidgrab_VB6.ocx
+
+ 4. save the file
+
+
+ 5. open your project's ".FRM" file that contains a TVideoGrabber component
+
+ 6. locate the line that begins by "Object..." and ends by "vidgrab_VB6.ocx"
+
+ 7. replace it by this line ("vidgrab_VB6.ocx" WITH QUOTES) :
+
+    Object = "{FF3B1F41-D145-4555-B361-92A5E6DAE70D}#1.0#0"; "vidgrab_VB6.ocx"
+
+
+ 5. repeat the 5. to 7. steps for each FRM file that contains a TVideoGrabber component

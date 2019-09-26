@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/08/24 14:43:02.636.pas,C:\Users\Eduardo\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\Eduardo\Desktop\Prototipo 1.0\UTMP.pas</Transaction>
+    <Transaction>2015/08/24 14:43:02.647.dfm,C:\Users\Eduardo\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\Eduardo\Desktop\Prototipo 1.0\UTMP.dfm</Transaction>
+    <Transaction>2015/08/24 14:43:41.776.dproj,C:\Users\Eduardo\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\Eduardo\Desktop\Prototipo 1.0\Inclusor.dproj</Transaction>
+    <Transaction>2015/08/24 14:44:13.699.dproj,C:\Users\Eduardo\Desktop\Prototipo 1.0\Inclusor.dproj=C:\Users\Eduardo\Desktop\Prototipo 1.0\Inclusor.dproj</Transaction>
+    <Transaction>2015/08/24 14:47:43.199.pas,C:\Users\Eduardo\Desktop\Prototipo 1.0\UTMP.pas=</Transaction>
+    <Transaction>2015/08/24 14:47:43.199.dfm,C:\Users\Eduardo\Desktop\Prototipo 1.0\UTMP.dfm=</Transaction>
+    <Transaction>2015/08/24 15:53:03.059.pas,C:\Users\Eduardo\Desktop\Prototipo 1.0\Unit2.pas=C:\Users\Eduardo\Desktop\Prototipo 1.0\ULeitor.pas</Transaction>
+    <Transaction>2015/08/24 15:53:03.066.dfm,C:\Users\Eduardo\Desktop\Prototipo 1.0\Unit2.dfm=C:\Users\Eduardo\Desktop\Prototipo 1.0\ULeitor.dfm</Transaction>
+    <Transaction>2015/08/24 17:06:10.681.pas,C:\Users\Eduardo\Desktop\Prototipo 1.0\Unit3.pas=C:\Users\Eduardo\Desktop\Prototipo 1.0\UPrincipal.pas</Transaction>
+    <Transaction>2015/08/24 17:06:10.693.dfm,C:\Users\Eduardo\Desktop\Prototipo 1.0\Unit3.dfm=C:\Users\Eduardo\Desktop\Prototipo 1.0\UPrincipal.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

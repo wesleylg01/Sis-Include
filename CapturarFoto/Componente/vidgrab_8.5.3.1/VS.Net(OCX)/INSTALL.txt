@@ -1,0 +1,78 @@
+
+ TVideoGrabber Video Capture and Media Player component
+ ------------------------------------------------------
+
+ version        : v8.5 build 8.5.3.1
+ date           : October 10, 2011
+
+ status         : Evaluation package
+ limitations    : nag-screens, stops after a random time
+
+ system req.    : Windows 7 / Windows Vista / XP
+                  2Gb memory or more
+ 
+ home page      : http://www.datastead.com
+ contact        : contact@datastead.com
+ support        : support@datastead.com
+ purchase       : http://www.datastead.com/vidgrab/order.htm
+ 
+
+ USER GUIDE
+ ==========
+
+ The user guide is located in the "TVideoGrabber.chm" file of the \Help folder.
+
+
+ PACKAGE INSTALL
+ ===============
+
+ - copy vidgrab_NET.OCX in a folder of your choice
+
+ - register vidgrab_NET.OCX by invoking regsvr32
+
+   E.g. "regsvr32 c:\vidgrab\vidgrab_NET.ocx'
+
+
+ PACKAGE UNINSTALL
+ =================
+  
+ To uninstall the component:
+
+ - invoke regsvr32 /u.
+
+   E.g. "regsvr32 /u c:\vidgrab\vidgrab_NET.ocx'
+
+ - delete the vidgrag_NET.OCX file.
+
+
+ UPGRADING FROM AN EARLIER VERSION OF TVIDEOGRABBER
+ ==================================================
+
+ If you get an error when trying to compile or run your project:
+
+ - exit Visual Studio
+ - open the source code file corresponding to the form that 
+   contains the TVideoGrabber component
+ - comment or delete a line related to TVideoGrabber that contains the word "OcxState"
+ - save the source code file
+ - run Visual Studio, open and fully rebuild your project.
+
+
+ Properties
+ ==========
+ 
+ Some of properties included in the user guide are not published (their values are 
+
+ not stored, so they are not visible with the object explorer), however they exist 
+
+ and you can assign and read  their values (e.g. VideoDevice, AudioInput, etc...)
+
+
+ Types
+ =====
+
+ The types that described in the user guide begin by "Tx" in the OCX
+
+ e.g. "TPlaylist" in the user guide is TxPlaylist in the OCX.
+
+ They are all listed in the "EnumeratedType.txt" file included in the package.

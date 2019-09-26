@@ -1,0 +1,16 @@
+program Inclusor;
+
+uses
+  Forms,
+  UConversao in 'UConversao.pas' {Form1},
+  ULeitor in 'ULeitor.pas' {Form2};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

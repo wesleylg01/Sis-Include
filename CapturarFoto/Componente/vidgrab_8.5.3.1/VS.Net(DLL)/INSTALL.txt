@@ -1,0 +1,114 @@
+
+ TVideoGrabber Video Capture and Media Player component
+ ------------------------------------------------------
+
+ version        : v8.5 build 8.5.3.1
+ date           : October 10, 2011
+
+ status         : Evaluation package
+ limitations    : nag-screens, stops after a random time
+
+ system req.    : Windows 7 / Windows Vista / XP
+                  2Gb memory or more
+
+ home page      : http://www.datastead.com
+ contact        : contact@datastead.com
+ support        : support@datastead.com
+ purchase       : http://www.datastead.com/vidgrab/order.htm
+ 
+
+ USER GUIDE
+ ==========
+
+ The user guide is located in the "TVideoGrabber.chm" file of the \Help folder.
+
+
+ INSTALLING THE COMPONENT ON THE DEVELOPMENT PLATFORM
+ ====================================================
+
+ On the development platform, the TVideoGrabber_8.5.3.1.dll file must be accessible from the system path:
+ (no required when distributing the application, see "SETUP AND DEPLOYMENT" below)
+
+ - on a 32 bits development platform, copy TVideoGrabber_8.5.3.1.dll to the Windows\System32 folder 
+
+ - on a 64 bits development platform, copy TVideoGrabber_8.5.3.1.dll to the Windows\SysWow64 folder 
+
+
+  COMPONENT ARCHITECTURE
+ ======================
+
+ - TVideoGrabber_8.5.3.1.dll is the TVideoGrabber component itself, that requires one of the following DLL wrappers.
+
+ - depending on the .NET framework version you are using, you will have to add the correponding .NET DLL wrapper as reference to your project:
+
+
+   Visual Studio 2003: 
+   ------------------
+   use VideoGrabberNET1.1.dll
+
+
+   Visual Studio 2005: 
+   ------------------
+   use VideoGrabberNET2.0.dll
+
+
+   Visual Studio 2008:
+   ------------------
+   use VideoGrabberNET.40.dll (default), or VideoGrabberNET3.5.dll or VideoGrabberNET2.0.dll, according to the target framework version of your project (you can see it in your project's properties -> "Build" settings)
+
+
+   Visual Studio 2010:
+   ------------------
+   use VideoGrabberNET.40.dll (default), or VideoGrabberNET3.5.dll or VideoGrabberNET2.0.dll (same remark as above)
+
+   (for example if you need your application to be compatible with Windows 2000 you have to use VideoGrabberNET1.1.dll or VideoGrabberNET2.0.dll, 
+   because the .NET 2.0 framework is the last version compatible with Windows 2000)
+
+
+ INSTALLING THE COMPONENT ON THE VISUAL STUDIO TOOLBOX
+ =====================================================
+
+ - to install the TVideoGrabber component on the Toolbox
+
+   . run Visual Studio
+
+   . on the Toolbox right-click "Add/Remove items"
+
+   . click "Browse in the ".NET Framework Components" tab of the "Customize Toolbox" dialog 
+
+   . depending on the Visual Studio and target framework versions used, select the corresponding VideoGrabberNETx.x.DLL file.
+
+
+ REFERENCE ERROR WHEN REBUILDING AN EXISTING PROJECT
+ ===================================================
+
+
+ - if you get a "could not resolve this reference locate the assembly VideoGrabberNETx.x.DLL error when rebuilding a project"
+
+   . open the project
+
+   . in "Solution Explorer, expand "Reference"
+
+   . delete the "VideoGrabberNETx.x.DLL" reference in error
+
+   . right-click "Add Reference"
+
+   . select the "VideoGrabberNETx.x.DLL" corresponding to your target framework version under the "VS.NET(DLL)" folder of the package
+
+   . then make a full rebuild
+
+
+ SETUP AND DEPLOYMENT OF THE APPLICATION
+ =======================================
+
+ To run a project based on TVideoGrabber on a client computer, VideoGrabberNETx.x.DLL and 
+ TVideoGrabber_8.5.3.1.dll must be located in the folder of your application's .EXE
+  
+ Therefore, when building your "Setup and Deployment" project by using the setup wizard:
+
+     (no action is required for VideoGrabberNETx.x.DLL, it will be added automatically in the "Detected Dependencies" group)
+
+   . add the TVideoGrabber_8.5.3.1.dll to the setup project
+
+   . set the folder property of TVideoGrabber_8.5.3.1.dll to "Application folder"
+

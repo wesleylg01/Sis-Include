@@ -1,0 +1,1158 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+Display DIALOGEX 0, 0, 534, 116
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Display"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "2ND VIDEO WINDOW ACTIVE",chk2ndVideoWindowActive,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,346,5,116,10,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "main video window",grb2ndVideoWindow,344,20,188,94,0,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "e.g. new location: left 520, top 20, width 480, height 360",
+                    btnEG2ndNewLocation2,347,94,182,10
+    PUSHBUTTON      "e.g. new location: left 10, top 10   (autosize)",
+                    btnEG2ndNewLocation,347,79,182,10
+    GROUPBOX        "display on...",rdg2ndDisplayedOn,471,34,58,35,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "2nd monitor",rdg2ndDisplayedOn2,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,476,54,50,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "1st monitor",rdg2ndDisplayedOn1,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,476,44,48,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "autosize",chk2ndAutoSize,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,351,39,40,10,WS_EX_TRANSPARENT
+    CONTROL         "stay on top",chk2ndStayOnTop,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,351,49,47,10,WS_EX_TRANSPARENT
+    CONTROL         "mouse moves window",chk2ndMouseMovesWindow,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,351,59,85,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "full screen",chk2ndFullScreen,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,402,30,55,10,WS_EX_TRANSPARENT
+    CONTROL         "use video port",chk2ndUseVideoPort,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,402,42,60,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "embedded",chk2ndEmbedded,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,351,30,47,10,WS_EX_TRANSPARENT
+    GROUPBOX        "main video window",grbMainVideoWindow,155,20,188,94,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "embedded",chk1stEmbedded,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,162,30,46,10,WS_EX_TRANSPARENT
+    CONTROL         "use video port",chk1stUseVideoPort,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,209,42,62,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "full screen",chk1stFullScreen,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,210,30,55,10,WS_EX_TRANSPARENT
+    CONTROL         "mouse moves window",chk1stMouseMovesWindow,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,162,59,87,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "stay on top",chk1stStayOnTop,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,162,49,45,10,WS_EX_TRANSPARENT
+    CONTROL         "autosize",chk1stAutoSize,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,162,39,40,10,WS_EX_TRANSPARENT
+    GROUPBOX        "display on...",rdg1stDisplayedOn,280,34,57,35,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "1st monitor",rdg1stDisplayedOn1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,284,44,48,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "2nd monitor",rdg1stDisplayedOn2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,284,54,49,10,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "e.g. new location: left 10, top 10   (autosize)",
+                    btnEG1stNewLocation,159,79,181,10
+    PUSHBUTTON      "e.g. new location: left 520, top 20, width 480, height 360",
+                    btnEG1stNewLocation2,159,94,181,10
+    CONTROL         "MAIN VIDEO WINDOW ACTIVE",chk1stVideoWindowActive,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,5,120,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "show logo, e.g.:",chkSetLogo,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,64,34,75,10,WS_EX_TRANSPARENT
+    CONTROL         "border",chkBorder,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    64,20,35,10,WS_EX_TRANSPARENT
+    CONTROL         "change cursor (e.g.: cross)",chkChangeCursor,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,64,5,98,10,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "video renderer",rdgVideoRenderer,0,0,60,115,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "overlay",rdgVideoRenderer5,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,5,62,35,10,WS_EX_TRANSPARENT
+    CONTROL         "Standard",rdgVideoRenderer4,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,5,50,45,10,WS_EX_TRANSPARENT
+    CONTROL         "auto select",rdgVideoRenderer1,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,5,10,49,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "VMR7",rdgVideoRenderer3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,5,37,40,8,WS_EX_TRANSPARENT
+    CONTROL         "VMR9",rdgVideoRenderer2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,5,24,40,8,WS_EX_TRANSPARENT
+    CONTROL         143,imgLogo,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE | WS_TABSTOP | 0x20,64,49,80,64,
+                    WS_EX_TRANSPARENT
+    CONTROL         "none",rdgVideoRenderer7,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,6,97,35,10,WS_EX_TRANSPARENT
+    CONTROL         "recording priority",rdgVideoRenderer6,"Button",
+                    BS_AUTORADIOBUTTON | BS_MULTILINE | WS_GROUP | 
+                    WS_TABSTOP,5,74,49,19,WS_EX_TRANSPARENT
+END
+
+Player DIALOGEX 0, 0, 520, 87
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Player"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      ">>",btnFastFwd,300,54,30,10
+    PUSHBUTTON      "<<",btnFastRew,266,54,30,10
+    PUSHBUTTON      ">",btnPlay,231,54,30,10
+    PUSHBUTTON      "o",btnStop,197,54,30,10
+    PUSHBUTTON      "||",btnPause,162,54,30,10
+    PUSHBUTTON      "<",btnPlayBackwards,128,54,30,10
+    PUSHBUTTON      "Open a clip",btnPlayerOpenFile,2,15,49,10
+    PUSHBUTTON      "Open last clip recorded",btnOpenLastClipRecorded,53,15,
+                    81,10
+    PUSHBUTTON      "Reopen last clip played",btnOpenLastClipPlayed,138,15,
+                    82,10
+    PUSHBUTTON      "Close",btnPlayerCloseFile,223,15,30,10
+    PUSHBUTTON      "Open streaming URL:",btnPlayerOpenStreamingURL,256,15,
+                    75,10
+    EDITTEXT        edtPlayerStreamingURL,335,15,182,12
+    EDITTEXT        edtPlayerSpeedRatio,3,34,23,12,ES_RIGHT
+    EDITTEXT        edtPlayerFastSeekSpeed,115,34,26,12,ES_RIGHT
+    CONTROL         "auto start playing",btnAutoPlay,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,227,34,65,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "render player audio",chkPlayerAudioRendering,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,299,34,74,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "automatically refresh the paused display  (lets you apply graphics overlays when the player is paused (the frame grabber must be enabled)",
+                    chkRefreshPausedDisplay,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,69,464,15,WS_EX_TRANSPARENT
+    GROUPBOX        "DV playback size",rdgDVPlaybackSize,379,30,138,25,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "full",rdgDVPlaybackSize1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,384,39,25,10,WS_EX_TRANSPARENT
+    CONTROL         "half",rdgDVPlaybackSize2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,414,39,25,10,WS_EX_TRANSPARENT
+    CONTROL         "quarter",rdgDVPlaybackSize3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,443,39,35,10,WS_EX_TRANSPARENT
+    CONTROL         "dc",rdgDVPlaybackSize4,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,482,39,27,10,WS_EX_TRANSPARENT
+    LTEXT           "Player functions",IDC_STATIC,0,0,63,8
+    LTEXT           "If you want to use only the player and disable the live video functions, set VideoDevice = -1 and AudioDevice = -1 from the Object Inspector.",
+                    IDC_STATIC,68,0,448,8
+    CONTROL         "updPlayerSpeedRatio",updPlayerSpeedRatio,
+                    "msctls_updown32",UDS_SETBUDDYINT | WS_TABSTOP,26,34,10,
+                    12
+    CONTROL         "updPlayerFastSeekSpeed",updPlayerFastSeekSpeed,
+                    "msctls_updown32",UDS_SETBUDDYINT | WS_TABSTOP,141,34,10,
+                    12
+    LTEXT           "normal play speed ratio",IDC_STATIC,38,35,72,10
+    LTEXT           "ff/rewind speed ratio",IDC_STATIC,154,35,65,10
+END
+
+NetworkStreaming DIALOGEX 0, 0, 547, 116
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Network streaming"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Network streaming",rdgNetworkStreaming,0,0,178,45,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "disabled",rdgNetworkStreaming1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,5,10,91,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "direct network streaming",rdgNetworkStreaming2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,5,20,89,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "stream to a WM publishing point",rdgNetworkStreaming3,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,5,30,119,10,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "view direct streaming",btnViewDirectNetworkStreaming,
+                    100,19,75,11,WS_DISABLED
+    GROUPBOX        "direct ASF network streaming",grbDirectASFStreaming,0,
+                    49,178,30,0,WS_EX_TRANSPARENT
+    EDITTEXT        edtNetworkPort,74,59,25,12
+    EDITTEXT        edtNetworkMaxUsers,143,59,30,12
+    LTEXT           "Port (0 = auto select):",IDC_STATIC,4,60,68,8
+    LTEXT           "Max users:",IDC_STATIC,107,60,35,8
+    GROUPBOX        "ASF streaming to Window Media Server publishing point:",
+                    grbASFStreamingToWMServer,0,83,177,31,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        edtPublishingPoint,59,96,114,12
+    LTEXT           "publishing URL:",IDC_STATIC,5,98,52,8
+    GROUPBOX        "ASF settings",grbASFSettings,182,0,148,114,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "fixed frame rate",chkASFFixedFrameRate,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,187,72,60,10,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        cmbASFDeinterlaceMode,187,96,134,65,CBS_DROPDOWN | 
+                    WS_TABSTOP
+    EDITTEXT        edtASFVideoWidth,231,20,20,12
+    EDITTEXT        edtASFVideoBitRate,300,20,20,12
+    EDITTEXT        edtASFVideoQuality,300,34,20,12
+    EDITTEXT        edtASFVideoMaxKeyFrameSpacing,300,49,20,12
+    EDITTEXT        edtASFAudioChannels,300,64,20,12
+    EDITTEXT        edtASFVideoHeight,231,34,20,12
+    LTEXT           "(-1 = use default or profile value)",IDC_STATIC,214,10,
+                    104,10
+    LTEXT           "video width:",IDC_STATIC,190,22,38,8
+    LTEXT           "video bit rate:",IDC_STATIC,254,22,43,8
+    LTEXT           "video height:",IDC_STATIC,188,35,41,8
+    LTEXT           "video quality:",IDC_STATIC,256,37,41,8
+    LTEXT           "key frame spacing:",IDC_STATIC,238,51,60,8
+    LTEXT           "audio channels:",IDC_STATIC,247,65,51,8
+    LTEXT           "deinterlace mode:",IDC_STATIC,187,84,64,8
+    GROUPBOX        "ASF Profiles (the ASF settings on the left supersedes the profile values)",
+                    grbASFProfiles,335,0,209,114,0,WS_EX_TRANSPARENT
+    LISTBOX         lsbProfiles,340,30,200,79,LBS_NOINTEGRALHEIGHT | 
+                    WS_TABSTOP
+    PUSHBUTTON      "show profiles list",btnShowProfilesList,482,16,59,10
+    EDITTEXT        edtProfileIndex,461,15,18,12
+    LTEXT           "index of current profile: (-1 = disabled)",IDC_STATIC,
+                    339,16,118,8
+END
+
+Recording DIALOGEX 0, 0, 514, 119
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Recording"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "start (immediately)",btnStartRecordingImmediately,2,5,
+                    60,10
+    PUSHBUTTON      "start (controlled)",btnStartRecordingControlled,65,5,56,
+                    10
+    PUSHBUTTON      "stop",btnStopRecording,125,5,22,10
+    PUSHBUTTON      "renew recording file",btnRenewRecordingFile,151,5,70,10
+    GROUPBOX        "pause/resume",grbAVIPauseResume,229,0,105,55,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Recording can pause",chkRecordingCanPause,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,240,10,80,10,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "pause",btnPauseRecording,243,39,35,10
+    PUSHBUTTON      "resume",btnResumeRecording,282,39,35,10
+    GROUPBOX        "video and audio compression",IDC_STATIC,345,0,168,92,0,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "compression mode",rdgCompressMode,443,5,65,41,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "no",rdgCompressMode1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,448,15,35,10,WS_EX_TRANSPARENT
+    CONTROL         "after capture",rdgCompressMode3,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,448,34,56,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "on the fly",rdgCompressMode2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,448,25,50,10,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "compression type",rdgCompressType,443,47,65,43,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "audio",rdgCompressType2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,449,67,56,10,WS_EX_TRANSPARENT
+    CONTROL         "audio + video",rdgCompressType3,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,449,77,57,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "video",rdgCompressType1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,449,57,35,10,WS_EX_TRANSPARENT
+    COMBOBOX        cboVideoCompressors,350,25,89,65,CBS_DROPDOWN | 
+                    WS_TABSTOP
+    PUSHBUTTON      "settings",btnVideoCompressorSettings,404,39,35,10
+    COMBOBOX        cboAudioCompressors,350,64,89,65,CBS_DROPDOWN | 
+                    WS_TABSTOP
+    PUSHBUTTON      "settings",btnAudioCompressorSettings,404,78,35,10
+    LTEXT           "video compressor",IDC_STATIC,350,15,70,10
+    LTEXT           "audio compressor",IDC_STATIC,350,54,70,10
+    GROUPBOX        "recording method",rdgRecordingMethod,257,57,79,39,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "AVI or MPEG",rdgRecordingMethod1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,265,68,55,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "ASF (1)",rdgRecordingMethod2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,265,76,35,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "enable audio recording",chkAudioRecording,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,25,86,10,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        cboAudioFormats,135,25,89,65,CBS_DROPDOWN | WS_TABSTOP
+    CONTROL         "RECORD IN NATIVE FORMAT",chkPreserveNativeFormat,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,49,117,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "do not generate file names automatically, save to:",
+                    chkAVISaveToThisFile,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,69,168,10,WS_EX_TRANSPARENT
+    EDITTEXT        edtRecordingFileName,173,69,60,12
+    CONTROL         "OpenDML format (avi 2.0, captured file > 1 Gb)",
+                    chkOpenDML,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,0,84,
+                    162,10,WS_EX_TRANSPARENT
+    CONTROL         "use preallocated capture file:",chkPreallocFile,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,98,101,10,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        edtPreallocSize,103,98,25,12
+    PUSHBUTTON      "create preallocated file now",btnCreatePreallocFileNow,
+                    161,99,89,10
+    LTEXT           "(1) the settings are located on the ""network streaming"" tab",
+                    IDC_STATIC,259,98,188,10
+    LTEXT           "audio format:",IDC_STATIC,93,25,41,10
+    LTEXT           "Mb (size)",IDC_STATIC,131,99,30,10
+    PUSHBUTTON      "(more info...)",btnMoreInfo,116,48,61,13
+    CONTROL         "Send to DV (2)",rdgRecordingMethod3,"Button",
+                    BS_AUTORADIOBUTTON,265,84,61,12
+    LTEXT           "(2) the recording is sent to the DV camcorder (this feature is called also ""print to DV"")",
+                    IDC_STATIC,259,107,167,8
+    CONTROL         "pause creates new files",
+                    chkRecordingPauseCreatesNewFile,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,241,23,89,10,WS_EX_TRANSPARENT
+END
+
+Audio DIALOGEX 0, 0, 502, 87
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Audio"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "render audio",chkRenderAudioDevice,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,2,34,60,11,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "audio rendering",grbAudioRendering,69,0,119,84,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "mute audio rendering",chkMuteAudioRendering,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,79,10,89,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "tbrAudioVolume",tbrAudioVolume,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,74,34,104,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "tbrAudioBalance",tbrAudioBalance,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,74,59,104,10,
+                    WS_EX_TRANSPARENT
+    LTEXT           "volume",IDC_STATIC,79,25,60,10
+    LTEXT           "balance",IDC_STATIC,79,49,60,10
+    GROUPBOX        "Audio capture device",grbAudioCaptureDevice,197,0,301,
+                    84,0,WS_EX_TRANSPARENT
+    COMBOBOX        cboAudioDevices,202,15,163,65,CBS_DROPDOWN | WS_TABSTOP
+    COMBOBOX        cboAudioInputs,202,44,99,65,CBS_DROPDOWN | WS_TABSTOP
+    CONTROL         "audio input mono",chkAudioInputMono,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,305,44,71,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "tbrAudioInputLevel",tbrAudioInputLevel,
+                    "msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,379,20,99,
+                    10,WS_EX_TRANSPARENT
+    CONTROL         "tbrAudioInputBalance",tbrAudioInputBalance,
+                    "msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,379,49,99,
+                    10,WS_EX_TRANSPARENT
+    LTEXT           "audio input",IDC_STATIC,202,34,40,10
+    LTEXT           "audio input level",IDC_STATIC,384,10,79,10
+    LTEXT           "audio input balance",IDC_STATIC,384,39,84,10
+    LTEXT           "to select programmatically an item by name in a list, use the FindIndexInListByName function",
+                    IDC_STATIC,202,69,294,10
+END
+
+VideoSource DIALOGEX 0, 0, 531, 117
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Video source"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "VIDEO SOURCE",IDC_STATIC,0,0,114,28,0,WS_EX_TRANSPARENT
+    COMBOBOX        cboVideoSource,5,11,104,65,CBS_DROPDOWN | WS_TABSTOP
+    GROUPBOX        "Preview",grbPreview,118,0,79,28,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Start",btnStartPreview,123,11,33,12
+    PUSHBUTTON      "Stop",btnStopPreview,159,11,33,12
+    GROUPBOX        "Frame rate",grbFrameRate,202,0,50,28,0,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "OK",btnFrameRate,232,11,16,12
+    EDITTEXT        edtFrameRate,207,11,24,12
+    GROUPBOX        "video source = video capture device",
+                    grbVsVideoCaptureDevice,0,28,326,55,0,WS_EX_TRANSPARENT
+    COMBOBOX        cboVideoDevices,5,38,217,65,CBS_DROPDOWN | WS_TABSTOP
+    COMBOBOX        cboVideoInputs,5,63,74,65,CBS_DROPDOWN | WS_TABSTOP
+    COMBOBOX        cboVideoSizes,84,63,70,65,CBS_DROPDOWN | WS_TABSTOP
+    COMBOBOX        cboVideoSubtypes,158,63,70,65,CBS_DROPDOWN | WS_TABSTOP
+    COMBOBOX        cboAnalogVideoStandard,231,63,89,65,CBS_DROPDOWN | 
+                    WS_TABSTOP
+    CONTROL         "half DV frame rate",chkReduceDVFrameRate,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,241,38,74,10,
+                    WS_EX_TRANSPARENT
+    LTEXT           "video input",IDC_STATIC,5,53,42,10
+    LTEXT           "video subtype",IDC_STATIC,158,53,49,8
+    LTEXT           "video size",IDC_STATIC,85,53,37,8
+    LTEXT           "analog video standard",IDC_STATIC,231,53,74,10
+    GROUPBOX        "video source = file or URL",grbVsFileOrUrl,0,84,188,28,
+                    0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "open",btnSelectFileOrUrl,5,94,35,12
+    EDITTEXT        edtVideoSourceFileOrUrl,44,94,138,12
+    GROUPBOX        "video source = screen recording",grbVsScreenRecording,
+                    192,84,134,28,0,WS_EX_TRANSPARENT
+    CONTROL         "record cursor",chkScreenRecordingWithCursor,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,198,94,73,10,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "preferred video sizes (examples)",
+                    grbPreferredVideoSizes,335,28,114,85,0,WS_EX_TRANSPARENT
+    CONTROL         "device sizes",rdgPreferredVideoSize1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,340,37,60,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "88x60",rdgPreferredVideoSize2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,340,47,60,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "88x72",rdgPreferredVideoSize3,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,340,57,60,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "180x120",rdgPreferredVideoSize4,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,340,67,60,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "180x144",rdgPreferredVideoSize5,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,340,77,60,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "320x240",rdgPreferredVideoSize6,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,340,87,60,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "352x288",rdgPreferredVideoSize7,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,340,97,60,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "360x240",rdgPreferredVideoSize8,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,399,37,45,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "360x288",rdgPreferredVideoSize9,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,399,47,45,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "640x480",rdgPreferredVideoSize10,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,399,57,45,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "720x480",rdgPreferredVideoSize11,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,399,67,45,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "stretch",chkStretchPreferredVideoSize,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,399,97,35,10,
+                    WS_EX_TRANSPARENT | WS_EX_RIGHT
+    CONTROL         "720x576",rdgPreferredVideoSize12,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,399,77,45,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "768x576",rdgPreferredVideoSize13,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,399,87,45,10,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "video device dialogs",grbVideoDevicesDialogs,453,28,75,
+                    85,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "device",btnDeviceDialog,463,38,57,11
+    PUSHBUTTON      "stream",btnStreamDialog,463,52,57,11
+    PUSHBUTTON      "camera control",btnCameraControlDialog,463,67,57,11
+    PUSHBUTTON      "video quality",btnVideoQualityDialog,463,82,57,11
+    PUSHBUTTON      "video control",btnVideoControlDialog,463,97,57,11
+    CONTROL         "Auto refresh preview",btnAutoRefreshPreview,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,257,15,82,10,
+                    WS_EX_TRANSPARENT
+    LTEXT           "to select programmatically an item by name in a list, use the FindIndexInListByName function",
+                    IDC_STATIC,256,3,271,8
+END
+
+TVTuner DIALOGEX 0, 0, 457, 111
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TV tuner"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        mmoChannelLog,226,4,227,105,ES_MULTILINE
+    GROUPBOX        "then select a TV channel: ",grbTVChannel,0,54,217,55,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        edtTVChannel,5,69,24,12
+    PUSHBUTTON      "set",btnSelect,30,69,18,12
+    GROUPBOX        "frequency override",grbFrequencyOverride,59,64,104,40,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        edtChannelFrequency,64,87,35,12
+    PUSHBUTTON      "set",Command22,102,87,18,12
+    PUSHBUTTON      "delete",Command23,124,87,33,12
+    CONTROL         "enabled",chkEnableFrequencyOverrides,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,64,74,48,10,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "Autoscan",grbTVScan,167,64,45,40,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "start",btnStartScan,172,73,35,12
+    PUSHBUTTON      "stop",btnStopScan,172,87,35,12
+    GROUPBOX        "First off all, select the tuner input type and the country code: ",
+                    grbTunerCountryCode,0,0,217,50,0,WS_EX_TRANSPARENT
+    GROUPBOX        "tuner input type",rdgTunerInputType,5,10,60,35,WS_GROUP,
+                    WS_EX_TRANSPARENT
+    CONTROL         "cable",rdgTunerInputType1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,10,20,40,10,WS_EX_TRANSPARENT
+    CONTROL         "antenna",rdgTunerInputType2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,10,30,40,10,WS_EX_TRANSPARENT
+    GROUPBOX        "country code",grbCountryCode,69,10,55,35,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        edtCountryCode,74,25,23,12
+    PUSHBUTTON      "set",btnSetCountryCode,98,25,18,12
+    PUSHBUTTON      "clear freq. overrides",btnResetAllOverrides,132,25,77,
+                    12
+END
+
+Reencoding DIALOGEX 0, 0, 541, 117
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Reencoding"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Stop",btnStopReencoding,457,87,50,15
+    PUSHBUTTON      "Start",btnStartReencoding,403,87,50,15
+    GROUPBOX        "reencoding method",rdgReencodingMethod,290,74,74,39,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "AVI / MPEG",rdgReencodingMethod1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,295,84,60,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "ASF",rdgReencodingMethod2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,295,94,40,15,WS_EX_TRANSPARENT
+    GROUPBOX        "reencoding settings",grbReencodingSettings,290,0,249,70,
+                    0,WS_EX_TRANSPARENT
+    CONTROL         "WMV output",chkWMVOutput,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,295,15,55,10,WS_EX_TRANSPARENT
+    CONTROL         "use the frame grabber (allows text/graphics overlays, video processing...)",
+                    chkUseFrameGrabber,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    295,54,241,10,WS_EX_TRANSPARENT
+    CONTROL         "includes the audio stream",chkIncludeAudioStream,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,396,25,98,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "use the current video compressor (selected in the ""recording"" tab)",
+                    chkUseCurrentVideoCompressor,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,295,34,222,10,WS_EX_TRANSPARENT
+    CONTROL         "includes the video stream",chkIncludeVideoStream,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,295,25,94,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "use the current audio compressor (selected in the ""recording"" tab)",
+                    chkUseCurrentAudioCompressor,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,295,44,223,10,WS_EX_TRANSPARENT
+    GROUPBOX        "start time / stop time",grbStartStopTime,20,39,267,74,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        edtDuration,154,84,59,12
+    EDITTEXT        edtStartTime,154,54,60,12
+    EDITTEXT        edtStopTime,154,69,60,12
+    PUSHBUTTON      "what is the source duration ?",btnDuration,38,84,111,12
+    LTEXT           "start time (-1 = beginning of source clip) :",
+                    IDC_STATIC,24,54,127,8
+    LTEXT           "stop time (-1 = end of source clip) :",IDC_STATIC,42,69,
+                    108,8
+    LTEXT           "(the start and stop times are expressed in 100ns units, e.g. 2 seconds = 20000000)",
+                    IDC_STATIC,24,103,260,8
+    EDITTEXT        edtDestinationVideoClip,148,19,138,12
+    EDITTEXT        edtSourceVideoClip,148,5,138,12
+    PUSHBUTTON      "select source video clip...",btnSourceVideoClip,46,5,97,
+                    12
+    LTEXT           "file name for the new video clip:",IDC_STATIC,46,20,100,
+                    8
+    LTEXT           "(extension will be "".wmv"" if WMV output enabled)",
+                    IDC_STATIC,0,32,156,8
+END
+
+VideoProcessing DIALOGEX 0, 0, 509, 116
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Video processing"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Software video processing   (requires the frame grabber to be enabled)",
+                    grbSoftwareVideoProcessing,0,0,242,113,0,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "reset all",btnResetAll,122,84,32,20
+    GROUPBOX        "Video rotation (in degrees)",rdgVideoRotation,5,15,89,
+                    55,0,WS_EX_TRANSPARENT
+    CONTROL         "270 mirror",rdgVideoRotation8,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,39,54,50,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "180 mirror",rdgVideoRotation7,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,39,44,50,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "90 mirror",rdgVideoRotation6,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,39,34,40,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "0 mirror",rdgVideoRotation5,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,39,25,40,10,WS_EX_TRANSPARENT
+    CONTROL         "0",rdgVideoRotation1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,10,25,25,10,WS_EX_TRANSPARENT
+    CONTROL         "180",rdgVideoRotation3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,10,44,25,10,WS_EX_TRANSPARENT
+    CONTROL         "90",rdgVideoRotation2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,10,34,25,10,WS_EX_TRANSPARENT
+    CONTROL         "270",rdgVideoRotation4,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,10,54,25,10,WS_EX_TRANSPARENT
+    GROUPBOX        "deinterlacing",rdgDeinterlacing,98,15,55,55,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "full size",rdgDeinterlacing3,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,103,54,40,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "half-size",rdgDeinterlacing2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,103,39,40,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "disabled",rdgDeinterlacing1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,103,25,40,10,WS_EX_TRANSPARENT
+    CONTROL         "flip vertical",chkFlipVertical,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,79,50,10,WS_EX_TRANSPARENT
+    CONTROL         "flip horizontal",chkFlipHorizontal,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,94,55,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "greyscale",chkGreyScale,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,60,79,55,8,WS_EX_TRANSPARENT
+    CONTROL         "inverted colors",chkInvertColors,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,60,94,59,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "tbrBrightness",tbrBrightness,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | TBS_BOTH | WS_TABSTOP,157,15,
+                    20,89,WS_EX_TRANSPARENT
+    CONTROL         "tbrContrast",tbrContrast,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | TBS_BOTH | WS_TABSTOP,177,15,
+                    20,89,WS_EX_TRANSPARENT
+    CONTROL         "tbrSaturation",tbrSaturation,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | TBS_BOTH | WS_TABSTOP,197,15,
+                    20,89,WS_EX_TRANSPARENT
+    CONTROL         "tbrHue",tbrHue,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | TBS_BOTH | WS_TABSTOP,217,15,20,89,
+                    WS_EX_TRANSPARENT
+    LTEXT           "bright. contr.  satur.   hue.",IDC_STATIC,159,103,81,8
+    GROUPBOX        "Cropping",grbCropping,359,0,148,114,0,WS_EX_TRANSPARENT
+    CONTROL         "enabled",chkCroppingEnabled,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,364,10,40,10,WS_EX_TRANSPARENT
+    CONTROL         "out bounds",chkCroppingOutbounds,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,406,10,49,10,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        edtCroppingWidth,418,25,30,12
+    EDITTEXT        edtCroppingHeight,418,39,30,12
+    PUSHBUTTON      "reset",btnCroppingZoomReset,448,58,31,11
+    CONTROL         "trkCroppingX",trkCroppingX,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,369,94,119,15,
+                    WS_EX_TRANSPARENT
+    CONTROL         "trkCroppingY",trkCroppingY,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | WS_TABSTOP,482,5,20,104,
+                    WS_EX_TRANSPARENT
+    CONTROL         "trkCroppingZoom",trkCroppingZoom,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,364,69,119,10,
+                    WS_EX_TRANSPARENT
+    LTEXT           "X",IDC_STATIC,364,98,10,10
+    LTEXT           "Y pos",IDC_STATIC,461,10,20,8
+    LTEXT           "cropping zoom",IDC_STATIC,369,59,70,10
+    LTEXT           "area width",IDC_STATIC,378,26,37,8
+    LTEXT           "area height",IDC_STATIC,378,40,38,8
+    GROUPBOX        "VMR9 image adjustment",grbVMR9Adjust,246,0,109,114,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "fix range",vmr9FixRange,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,251,64,30,19,WS_EX_TRANSPARENT
+    CONTROL         "tbrVMR9Brightness",tbrVMR9Brightness,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | TBS_BOTH | WS_TABSTOP,270,10,
+                    20,94,WS_EX_TRANSPARENT
+    CONTROL         "tbrVMR9Contrast",tbrVMR9Contrast,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | TBS_BOTH | WS_TABSTOP,290,10,
+                    20,94,WS_EX_TRANSPARENT
+    CONTROL         "tbrVMR9Saturation",tbrVMR9Saturation,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | TBS_BOTH | WS_TABSTOP,310,10,
+                    20,94,WS_EX_TRANSPARENT
+    CONTROL         "tbrVMR9Hue",tbrVMR9Hue,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | TBS_BOTH | WS_TABSTOP,330,10,
+                    20,94,WS_EX_TRANSPARENT
+    LTEXT           "bright. contr.  satur.  hue.",IDC_STATIC,272,103,80,8
+END
+
+MotionDetection DIALOGEX 0, 0, 542, 117
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Motion detection"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",imgMotionDetected,"Static",SS_BLACKRECT | WS_BORDER | 
+                    WS_TABSTOP,258,0,65,50
+    CONTROL         "ENABLE MOTION DETECTION",chkMotionDetectionEnabled,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,2,10,116,15,
+                    WS_EX_TRANSPARENT
+    CONTROL         "reduce video noise",chkReduceVideoNoise,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,121,12,74,10,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "show grid dialog",btnShowGridDialog,197,12,58,10
+    CONTROL         "red",chkCompareRed,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,64,25,23,10,WS_EX_TRANSPARENT
+    CONTROL         "greyscale",chk_GreyScale,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,153,25,48,10,WS_EX_TRANSPARENT
+    CONTROL         "blue",chkCompareBlue,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,123,25,25,10,WS_EX_TRANSPARENT
+    CONTROL         "green",chkCompareGreen,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,89,25,30,10,WS_EX_TRANSPARENT
+    GROUPBOX        "grid string",grbGridString,2,39,247,35,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        edtGrid,40,57,202,12
+    LTEXT           "sensitivity +/-",IDC_STATIC,34,47,38,8
+    CONTROL         "updGlobalGridSensitivity",updGlobalGridSensitivity,
+                    "msctls_updown32",UDS_SETBUDDYINT | WS_TABSTOP,30,57,10,
+                    12
+    LTEXT           "[valid]",lblGridValid,5,59,22,8
+    GROUPBOX        "grid size",IDC_STATIC,2,79,84,35,0,WS_EX_TRANSPARENT
+    EDITTEXT        edtGridColCount,5,98,15,12
+    EDITTEXT        edtGridRowCount,34,98,15,12
+    PUSHBUTTON      "OK",btnApplyGridSize,64,98,15,12
+    CONTROL         "updGridColCount",updGridColCount,"msctls_updown32",
+                    UDS_SETBUDDYINT | WS_TABSTOP,20,98,8,12
+    CONTROL         "updGridRowCount",updGridRowCount,"msctls_updown32",
+                    UDS_SETBUDDYINT | WS_TABSTOP,49,98,8,12
+    LTEXT           "col count/row count",IDC_STATIC,5,89,72,8
+    GROUPBOX        "cells sensitivity  (0 based index)",IDC_STATIC,89,79,
+                    116,35,0,WS_EX_TRANSPARENT
+    EDITTEXT        edtXCell,94,98,15,12
+    EDITTEXT        edtYCell,124,98,15,12
+    PUSHBUTTON      "OK",btnSetCellsSensitivity,181,98,15,12
+    EDITTEXT        edtCellSensitivity,153,98,15,12
+    CONTROL         "updXCell",updXCell,"msctls_updown32",UDS_SETBUDDYINT | 
+                    WS_TABSTOP,109,98,8,12
+    CONTROL         "updYCell",updYCell,"msctls_updown32",UDS_SETBUDDYINT | 
+                    WS_TABSTOP,139,98,8,12
+    LTEXT           "X cell       Y cell    sensitivity (0 .. 9)",IDC_STATIC,
+                    91,89,110,8
+    CONTROL         "updCellSensitivity",updCellSensitivity,"msctls_updown32",
+                    UDS_SETBUDDYINT | WS_TABSTOP,169,98,8,12
+    GROUPBOX        "max motion location",grbXYMaxMotion,217,83,94,30,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        edtMaxMotionXY,222,97,35,12
+    EDITTEXT        edtMaxMotionCoord,261,97,45,12
+    GROUPBOX        "Global motion ratio",grbMotionRatio,258,53,65,27,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        edtMotionRatio,268,64,45,12
+    EDITTEXT        mmoSensitivityGrid,328,0,104,114,ES_MULTILINE
+    EDITTEXT        mmoMotionGrid,435,0,104,114,ES_MULTILINE
+    LTEXT           "Motion detection",IDC_STATIC,4,0,65,8
+    LTEXT           "The frame grabber must be enabled.",
+                    lblMotionDetectorRequiresFrameGrabber,74,0,127,8
+    LTEXT           "detection method:",IDC_STATIC,2,25,58,8
+END
+
+Overlays DIALOGEX 0, 0, 518, 114
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Overlays"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "text overlay",grbTextOverlay,0,0,199,114,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        mmoTextOverlayString,5,10,104,99,ES_MULTILINE
+    CONTROL         "enabled",chkTextOverlayEnabled,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,113,10,43,10,WS_EX_TRANSPARENT
+    GROUPBOX        "Align",rdgTextOverlayAlign,113,25,40,47,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "left",rdgTextOverlayAlign1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,118,34,25,10,WS_EX_TRANSPARENT
+    CONTROL         "center",rdgTextOverlayAlign2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,118,44,33,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "right",rdgTextOverlayAlign3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,118,54,28,10,WS_EX_TRANSPARENT
+    EDITTEXT        edtTextOverlayLeft,158,30,20,12
+    EDITTEXT        edtTextOverlayTop,158,44,20,12
+    EDITTEXT        edtTextOverlayWidth,158,59,20,12
+    CONTROL         "transparent",chkTextOverlayTransparent,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,113,74,55,10,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "create a custom font",btnCreateCustomFont,117,89,75,12
+    LTEXT           "left",IDC_STATIC,180,30,10,10
+    LTEXT           "top",IDC_STATIC,180,45,10,10
+    LTEXT           "width",IDC_STATIC,180,59,18,10
+    GROUPBOX        """free hand"" mouse overlay USING DC",grbFreeHand,202,
+                    15,132,25,0,WS_EX_TRANSPARENT
+    CONTROL         "Enabled",chkFreeHandEnabled,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,207,25,40,10,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Erase current drawing",btnFreeHandErase,251,25,79,11
+    GROUPBOX        "lines overlay USING DIB",grbLinesOverlay,338,15,89,25,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Enabled",chkLinesOverlayEnabled,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,361,25,40,10,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "Bitmap overlay",grbBitmapOverlay,202,40,305,74,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Enabled",chkBitmapOverlayEnabled,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,207,50,40,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "transparent",chkBitmapOverlayTransparent,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,207,65,49,10,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        edtBitmapOvlerlayLeft,420,65,20,12
+    EDITTEXT        edtBitmapOvlerlayTop,420,89,20,12
+    PUSHBUTTON      "rst",btnBitmapOverlayResetSize,474,80,16,9
+    EDITTEXT        edtBitmapOverlaySize,469,65,25,12,ES_CENTER | 
+                    ES_READONLY
+    CONTROL         "tbrBitmapOverlaySize",tbrBitmapOverlaySize,
+                    "msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | 
+                    WS_TABSTOP,454,45,10,65,WS_EX_TRANSPARENT
+    CONTROL         132,imgBitmapOverlay,"Static",SS_BITMAP | 
+                    SS_REALSIZEIMAGE | WS_TABSTOP | 0x20,351,48,67,62,
+                    WS_EX_TRANSPARENT
+    LTEXT           "left pos.",IDC_STATIC,420,55,23,8
+    LTEXT           "top pos.",IDC_STATIC,420,80,23,8
+    LTEXT           "size",IDC_STATIC,474,55,20,10
+    LTEXT           "Frame overlay examples using the OnFrameOverlayUsing... events. ",
+                    IDC_STATIC,202,2,193,8
+    LTEXT           "The frame grabber must be enabled.",
+                    lblFrameOverlayRequiresFrameGrabber,399,2,116,8
+    CONTROL         "use transparent color ->",
+                    chkBitmapOverlayUseTransparentColor,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,208,79,87,9
+    CONTROL         "Alpha blending (0 .. 255) ->",
+                    chkBitmapOverlayAlphaBlending,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,207,97,98,10
+    EDITTEXT        edtAlphaBlendingValue,308,94,37,14,ES_AUTOHSCROLL
+    COMBOBOX        cmbBitmapOverlayTransparentColor,298,78,47,49,
+                    CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+FrameGrabber DIALOGEX 0, 0, 524, 116
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Frame grabber"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        mmoFrameCaptureLog,448,10,74,104,ES_MULTILINE
+    GROUPBOX        "zoom size",IDC_STATIC,409,10,37,104,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "rst",btnResetCaptureZoomSize,416,86,18,9
+    EDITTEXT        edtCaptureZoomSize,416,98,20,12,ES_READONLY
+    CONTROL         "tbrCaptureZoomSize",tbrCaptureZoomSize,
+                    "msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | 
+                    WS_TABSTOP,418,20,11,65,WS_EX_TRANSPARENT
+    GROUPBOX        "file names are generated automatically on a...",
+                    rdgAutoFileName,1,79,163,35,0,WS_EX_TRANSPARENT
+    EDITTEXT        edtAVIAutoFilePrefix,79,99,45,12
+    CONTROL         "sequential basis",rdgAutoFileName1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,89,65,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "time basis",rdgAutoFileName2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,7,98,65,10,
+                    WS_EX_TRANSPARENT
+    LTEXT           "prefix for file names:",IDC_STATIC,79,89,65,8
+    GROUPBOX        "burst-mode frame capture to... ",grbBurstMode,168,59,
+                    237,55,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Stop",btnBurstModeStop,355,68,40,10
+    PUSHBUTTON      "JPEG file",btnBurstModeJPEGFile,262,68,40,10
+    PUSHBUTTON      "BMP file",btnBurstModeBMPFile,218,68,40,10
+    PUSHBUTTON      "TBitmap",btnBurstModeTBitmap,173,68,40,10
+    EDITTEXT        edtBurstCount,171,82,20,12
+    EDITTEXT        edtBurstInterval,171,97,20,12
+    LTEXT           "number of frames to capture  (0 = capture frames indefinitely)",
+                    IDC_STATIC,199,84,195,8
+    LTEXT           "number of frames to skip for each frame captured",
+                    IDC_STATIC,198,99,148,10
+    GROUPBOX        "one-shot frame capture to...",grbOneShot,167,10,237,49,
+                    0,WS_EX_TRANSPARENT
+    CONTROL         "do not create the file name automatically, use this file name:",
+                    chkUseThisFileName,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    172,34,203,10,WS_EX_TRANSPARENT
+    EDITTEXT        edtUseThisFileName,185,44,214,12
+    PUSHBUTTON      "TBitmap",btnOneShotTBitmap,172,20,40,10
+    PUSHBUTTON      "BMP file",btnOneShotBMPFile,217,20,40,10
+    PUSHBUTTON      "JPEG file",btnOneShotJPEGFile,261,20,40,10
+    GROUPBOX        "frame grabber format",rgdFrameGrabberFormat,76,10,87,45,
+                    0,WS_EX_TRANSPARENT
+    CONTROL         "default",rgdFrameGrabberFormat1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,81,20,36,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "RGB32",rgdFrameGrabberFormat2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,81,30,37,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "RGB24",rgdFrameGrabberFormat3,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,81,39,36,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "RGB565",rgdFrameGrabberFormat4,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,119,20,40,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "RGB555",rgdFrameGrabberFormat5,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,120,30,40,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "RGB8",rgdFrameGrabberFormat6,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,120,39,40,10,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "Frame grabber",rgdFrameGrabber,1,10,70,65,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "both streams",rgdFrameGrabber1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,4,20,56,15,
+                    WS_EX_TRANSPARENT
+    CONTROL         "preview stream",rgdFrameGrabber2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,4,31,62,15,
+                    WS_EX_TRANSPARENT
+    CONTROL         "capture",rgdFrameGrabber3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,4,43,45,15,WS_EX_TRANSPARENT
+    CONTROL         "disabled",rgdFrameGrabber4,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,4,54,56,15,WS_EX_TRANSPARENT
+    LTEXT           "Frame grabber.",IDC_STATIC,4,0,53,8
+    LTEXT           "The frame grabber handles frame capture, frame overlay and video processing, so these features are not available when it is disabled. ",
+                    IDC_STATIC,69,0,447,8
+    PUSHBUTTON      "Clipboard",btnOneShotClipboard,305,20,40,10
+    PUSHBUTTON      "Clipboard",btnBurstModeClipboard,307,68,40,10
+END
+
+MainForm DIALOGEX 0, 0, 568, 286
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Form1"
+MENU MainFormMainMenu
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "tbrPlayer",tbrPlayer,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,0,15,562,10,WS_EX_TRANSPARENT
+    EDITTEXT        mmoLog,0,79,109,188,ES_MULTILINE
+    EDITTEXT        edtDVDateTime,0,64,109,12
+    EDITTEXT        edtFrameCount,0,49,109,12
+    EDITTEXT        edtStoragePath,0,34,109,12
+    PUSHBUTTON      "audio",btnFormAudio,48,0,27,10
+    PUSHBUTTON      "recording",btnFormRecording,78,0,37,10
+    PUSHBUTTON      "network streaming && ASF",btnFormNetworkStreaming,118,0,
+                    84,10
+    PUSHBUTTON      "player",btnFormPlayer,204,0,27,10
+    PUSHBUTTON      "frame grabber",btnFormFrameGrabber,233,0,51,10
+    PUSHBUTTON      "motion detection",btnFormMotionDetection,287,0,60,10
+    PUSHBUTTON      "overlays",btnFormOverlays,350,0,35,10
+    PUSHBUTTON      "video processing",btnFormVideoProcessing,389,0,61,10
+    PUSHBUTTON      "display",btnFormDisplay,453,0,30,10
+    PUSHBUTTON      "reencoding",btnFormReencoding,486,0,44,10
+    PUSHBUTTON      "tv tuner",btnFormTVTuner,534,0,30,10
+    PUSHBUTTON      "video source",btnFormVideoSource,0,0,45,10
+    LTEXT           "storage path:",IDC_STATIC,0,25,38,8
+    CONTROL         "",IDC_VIDEOGRABBERVC61,
+                    "{18EAE3F2-7134-4FFA-9212-F50BD0A76D94}",0x0,118,34,270,
+                    194
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MainFormMainMenu MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Exit",                        ID_APP_EXIT
+    END
+    POPUP "Send DV commands"
+    BEGIN
+        MENUITEM "Play",                        mnuDVplay
+        MENUITEM "Stop",                        mnuDVstop
+        MENUITEM "Freeze",                      mnuDVfreeze
+        MENUITEM "Thaw",                        mnuDVthaw
+        MENUITEM "FF",                          mnuDVff
+        MENUITEM "Rew",                         mnuDVrew
+        MENUITEM "Record",                      mnuDVrecord
+        MENUITEM "Record freeze",               mnuDVrecordFreeze
+        MENUITEM "Record Strobe",               mnuRecordStrobe
+        MENUITEM "Step Fwd",                    mnuDVstepFwd
+        MENUITEM "Step Rev",                    mnuDVstepRev
+        MENUITEM "Mode Shuttle",                mnuDVmodeShuttle
+        MENUITEM "Play Fastest Fwd",            mnuDVplayFastestFwd
+        MENUITEM "Play Slowest Fwd",            mnuDVplaySlowestFwd
+        MENUITEM "Play Fastest Rev",            mnuDVplayFastestRev
+        MENUITEM "Play Slowest Rev",            mnuDVplaySlowestRev
+    END
+    MENUITEM "About",                       mnuAbout
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+Overlays_imgBitmapOverlay BITMAP  DISCARDABLE     "res\\Overlays_imgBitmapOverlay.bmp"
+Display_imgLogo         BITMAP  DISCARDABLE     "res\\Display_imgLogo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+MainForm DLGINIT
+BEGIN
+    IDC_VIDEOGRABBERVC61, 0x376, 1504, 0
+0x0000, 0x0000, 0x5054, 0x3046, 0x540d, 0x6956, 0x6564, 0x476f, 0x6172, 
+0x6262, 0x7265, 0x0400, 0x654c, 0x7466, 0x0002, 0x5403, 0x706f, 0x0002, 
+0x5705, 0x6469, 0x6874, 0x9503, 0x0601, 0x6548, 0x6769, 0x7468, 0x3b03, 
+0x0b01, 0x7546, 0x6c6c, 0x6552, 0x6170, 0x6e69, 0x0874, 0x411d, 0x4653, 
+0x654d, 0x6964, 0x5361, 0x7265, 0x6576, 0x5072, 0x6275, 0x696c, 0x6873, 
+0x6e69, 0x5067, 0x696f, 0x746e, 0x3106, 0x7468, 0x7074, 0x2f3a, 0x592f, 
+0x756f, 0x5772, 0x6e69, 0x6f64, 0x7377, 0x654d, 0x6964, 0x5361, 0x7265, 
+0x6576, 0x2f72, 0x6f59, 0x7275, 0x7550, 0x6c62, 0x7369, 0x6968, 0x676e, 
+0x6f50, 0x6e69, 0x0d74, 0x5341, 0x5646, 0x6469, 0x6f65, 0x6957, 0x7464, 
+0x0368, 0x0140, 0x410e, 0x7475, 0x466f, 0x6c69, 0x5065, 0x6572, 0x6966, 
+0x0678, 0x7602, 0x1067, 0x6944, 0x7073, 0x616c, 0x5f79, 0x7541, 0x6f74, 
+0x6953, 0x657a, 0x1309, 0x6944, 0x7073, 0x616c, 0x5f79, 0x7341, 0x6570, 
+0x7463, 0x6152, 0x6974, 0x076f, 0x6106, 0x5f72, 0x6f42, 0x0c78, 0x6944, 
+0x7073, 0x616c, 0x5f79, 0x654c, 0x7466, 0x0a02, 0x440b, 0x7369, 0x6c70, 
+0x7961, 0x545f, 0x706f, 0x0a02, 0x441c, 0x6f72, 0x7070, 0x6465, 0x7246, 
+0x6d61, 0x7365, 0x6f50, 0x6c6c, 0x6e69, 0x4967, 0x746e, 0x7265, 0x6176, 
+0x026c, 0x10ff, 0x7544, 0x6c61, 0x6944, 0x7073, 0x616c, 0x5f79, 0x654c, 
+0x7466, 0x0a02, 0x440f, 0x6175, 0x446c, 0x7369, 0x6c70, 0x7961, 0x545f, 
+0x706f, 0x9003, 0x1c01, 0x7544, 0x6c61, 0x6944, 0x7073, 0x616c, 0x5f79, 
+0x6956, 0x6564, 0x506f, 0x726f, 0x4574, 0x616e, 0x6c62, 0x6465, 0x1509, 
+0x5644, 0x6e45, 0x6f63, 0x6564, 0x5f72, 0x6956, 0x6564, 0x466f, 0x726f, 
+0x616d, 0x0774, 0x6408, 0x6676, 0x445f, 0x5356, 0x1944, 0x5644, 0x6e45, 
+0x6f63, 0x6564, 0x5f72, 0x6956, 0x6564, 0x526f, 0x7365, 0x6c6f, 0x7475, 
+0x6f69, 0x076e, 0x6407, 0x5f76, 0x7546, 0x6c6c, 0x4417, 0x4556, 0x636e, 
+0x646f, 0x7265, 0x565f, 0x6469, 0x6f65, 0x7453, 0x6e61, 0x6164, 0x6472, 
+0x0707, 0x7664, 0x5f73, 0x4150, 0x0d4c, 0x7243, 0x706f, 0x6970, 0x676e, 
+0x5a5f, 0x6f6f, 0x056d, 0x0000, 0x0000, 0x0000, 0x8000, 0x3fff, 0x4618, 
+0x7869, 0x6c46, 0x6369, 0x656b, 0x4f72, 0x4272, 0x616c, 0x6b63, 0x6143, 
+0x7470, 0x7275, 0x0865, 0x4913, 0x616d, 0x6567, 0x764f, 0x7265, 0x616c, 
+0x4579, 0x616e, 0x6c62, 0x6465, 0x0d08, 0x694c, 0x6563, 0x736e, 0x5365, 
+0x7274, 0x6e69, 0x0667, 0x4e03, 0x412f, 0x4d13, 0x746f, 0x6f69, 0x446e, 
+0x7465, 0x6365, 0x6f74, 0x5f72, 0x7247, 0x6469, 0x6e06, 0x3535, 0x3535, 
+0x3535, 0x3535, 0x3535, 0x3520, 0x3535, 0x3535, 0x3535, 0x3535, 0x2035, 
+0x3535, 0x3535, 0x3535, 0x3535, 0x3535, 0x3520, 0x3535, 0x3535, 0x3535, 
+0x3535, 0x2035, 0x3535, 0x3535, 0x3535, 0x3535, 0x3535, 0x3520, 0x3535, 
+0x3535, 0x3535, 0x3535, 0x2035, 0x3535, 0x3535, 0x3535, 0x3535, 0x3535, 
+0x3520, 0x3535, 0x3535, 0x3535, 0x3535, 0x2035, 0x3535, 0x3535, 0x3535, 
+0x3535, 0x3535, 0x3520, 0x3535, 0x3535, 0x3535, 0x3535, 0x2035, 0x4d1d, 
+0x6c75, 0x6974, 0x6c70, 0x7865, 0x6465, 0x7453, 0x6261, 0x6c69, 0x7a69, 
+0x7461, 0x6f69, 0x446e, 0x6c65, 0x7961, 0x0002, 0x5010, 0x616c, 0x6579, 
+0x5372, 0x6570, 0x6465, 0x6152, 0x6974, 0x056f, 0x0000, 0x0000, 0x0000, 
+0x8000, 0x3fff, 0x5214, 0x6565, 0x636e, 0x646f, 0x6e69, 0x5f67, 0x7453, 
+0x7261, 0x5474, 0x6d69, 0x0565, 0x0000, 0x0000, 0x0000, 0x8000, 0xbfff, 
+0x5215, 0x6565, 0x636e, 0x646f, 0x6e69, 0x5f67, 0x7453, 0x7261, 0x4674, 
+0x6172, 0x656d, 0x0005, 0x0000, 0x0000, 0x0000, 0xff80, 0x13bf, 0x6552, 
+0x6e65, 0x6f63, 0x6964, 0x676e, 0x535f, 0x6f74, 0x5470, 0x6d69, 0x0565, 
+0x0000, 0x0000, 0x0000, 0x8000, 0xbfff, 0x5214, 0x6565, 0x636e, 0x646f, 
+0x6e69, 0x5f67, 0x7453, 0x706f, 0x7246, 0x6d61, 0x0565, 0x0000, 0x0000, 
+0x0000, 0x8000, 0xbfff, 0x5218, 0x7761, 0x6153, 0x706d, 0x656c, 0x6143, 
+0x7470, 0x7275, 0x4c65, 0x636f, 0x7461, 0x6f69, 0x076e, 0x720f, 0x5f6c, 
+0x6f53, 0x7275, 0x6563, 0x6f46, 0x6d72, 0x7461, 0x5412, 0x7865, 0x4f74, 
+0x6576, 0x6c72, 0x7961, 0x535f, 0x7274, 0x6e69, 0x0c67, 0x0116, 0x0000, 
+0x6f4e, 0x6574, 0x203a, 0x6874, 0x2065, 0x6164, 0x6574, 0x742f, 0x6d69, 
+0x2065, 0x6f66, 0x6d72, 0x7461, 0x2073, 0x0a0d, 0x6163, 0x206e, 0x6562, 
+0x6520, 0x7361, 0x6c69, 0x2079, 0x6f6d, 0x6964, 0x6966, 0x6465, 0x0d2e, 
+0x0d0a, 0x730a, 0x7379, 0x6574, 0x206d, 0x6164, 0x6574, 0x742f, 0x6d69, 
+0x3a65, 0x2520, 0x7973, 0x5f73, 0x6974, 0x656d, 0x645b, 0x2f64, 0x6d6d, 
+0x792f, 0x2079, 0x6868, 0x6e3a, 0x3a6e, 0x7373, 0x255d, 0x0a0d, 0x5644, 
+0x7420, 0x6d69, 0x2065, 0x6f63, 0x6564, 0x203a, 0x7425, 0x6d69, 0x5f65, 
+0x6f63, 0x6564, 0x0d25, 0x440a, 0x2056, 0x6164, 0x6574, 0x742f, 0x6d69, 
+0x3a65, 0x2520, 0x7664, 0x745f, 0x6d69, 0x5b65, 0x6464, 0x6d2f, 0x2f6d, 
+0x7979, 0x6820, 0x3a68, 0x6e6e, 0x733a, 0x5d73, 0x0d25, 0x660a, 0x6172, 
+0x656d, 0x6320, 0x756f, 0x746e, 0x203a, 0x6625, 0x6172, 0x656d, 0x635f, 
+0x756f, 0x746e, 0x0d25, 0x740a, 0x6d69, 0x2065, 0x6628, 0x6c75, 0x296c, 
+0x203a, 0x7425, 0x6d69, 0x5f65, 0x7566, 0x6c6c, 0x0d25, 0x740a, 0x6d69, 
+0x2065, 0x7328, 0x6365, 0x3a29, 0x2520, 0x6974, 0x656d, 0x735f, 0x6365, 
+0x0d25, 0x740a, 0x6d69, 0x2065, 0x6e28, 0x2973, 0x203a, 0x7425, 0x6d69, 
+0x5f65, 0x3031, 0x6e30, 0x2573, 0x5618, 0x6469, 0x6f65, 0x6f43, 0x706d, 
+0x6572, 0x7373, 0x6f69, 0x5f6e, 0x7551, 0x6c61, 0x7469, 0x0579, 0x0000, 
+0x0000, 0x0000, 0x8000, 0x3fff, 0x561d, 0x6469, 0x6f65, 0x7246, 0x6d6f, 
+0x6d49, 0x6761, 0x7365, 0x545f, 0x6d65, 0x6f70, 0x6172, 0x7972, 0x6946, 
+0x656c, 0x1206, 0x6553, 0x4f74, 0x4266, 0x7469, 0x616d, 0x7370, 0x3130, 
+0x642e, 0x7461, 0x5623, 0x6469, 0x6f65, 0x7250, 0x636f, 0x7365, 0x6973, 
+0x676e, 0x525f, 0x746f, 0x7461, 0x6f69, 0x436e, 0x7375, 0x6f74, 0x416d, 
+0x676e, 0x656c, 0x0005, 0x0000, 0x0000, 0x0000, 0x04b6, 0x1540, 0x6956, 
+0x6564, 0x536f, 0x756f, 0x6372, 0x5f65, 0x6946, 0x656c, 0x724f, 0x5255, 
+0x064c, 0x6826, 0x7474, 0x3a70, 0x2f2f, 0x7777, 0x2e77, 0x6164, 0x6174, 
+0x7473, 0x6165, 0x2e64, 0x6f63, 0x2f6d, 0x6564, 0x6f6d, 0x642f, 0x6d65, 
+0x2e6f, 0x6d77, 0x1f76, 0x6956, 0x6564, 0x536f, 0x756f, 0x6372, 0x5f65, 
+0x6946, 0x656c, 0x724f, 0x5255, 0x5f4c, 0x7453, 0x7261, 0x5474, 0x6d69, 
+0x0565, 0x0000, 0x0000, 0x0000, 0x8000, 0xbfff, 0x561e, 0x6469, 0x6f65, 
+0x6f53, 0x7275, 0x6563, 0x465f, 0x6c69, 0x4f65, 0x5572, 0x4c52, 0x535f, 
+0x6f74, 0x5470, 0x6d69, 0x0565, 0x0000, 0x0000, 0x0000, 0x8000, 0xbfff, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MainDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MainDemo.ico"
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MainDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

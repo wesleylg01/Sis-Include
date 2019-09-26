@@ -1,0 +1,11 @@
+
+ - copy TVideoGrabber.chm to a local folder
+ 
+ - right-click on TVideoGrabber.chm
+
+ - select Properties from the menu
+
+ - click on the Unblock button at the bottom
+
+ You should then be able to view the CHM file.
+

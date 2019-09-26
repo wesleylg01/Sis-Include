@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MainDemo">
+</Property><Property Name="Solution File" Value="H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\MainDemo.sln">
+</Property><Property Name="Date" Value="lundi 25 août 2008">
+</Property><Property Name="Time" Value="17:30:08">
+</Property></Properties><Event ErrorLevel="0" Project="MainDemo" Source="MainDemo.csproj" Description="Project file successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\MainDemo.csproj">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="AssemblyInfo.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="Audio.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\Audio.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="SomeTools.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\SomeTools.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="Display.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\Display.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="FrameGrabber.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\FrameGrabber.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="IPCamera.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\IPCamera.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="MainForm.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\MainForm.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="miscCameraControl.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\miscCameraControl.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="miscDVCommands.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\miscDVCommands.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="miscSpecialControl.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\miscSpecialControl.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="miscVideoControl.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\miscVideoControl.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="miscVideoQuality.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\miscVideoQuality.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="MotionDetection.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\MotionDetection.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="NetworkStreaming.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\NetworkStreaming.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="Overlays.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\Overlays.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="Player.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\Player.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="Recording.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\Recording.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="Reencoding.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\Reencoding.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="SnapForm.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\SnapForm.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="TransparentWindow.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\TransparentWindow.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="TVTuner.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\TVTuner.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="VideoFromJPEGsOrBitmaps.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\VideoFromJPEGsOrBitmaps.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="VideoProcessing.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\VideoProcessing.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="VideoSource.cs" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\VideoSource.cs">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="App.ico" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="Audio.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\Audio.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="SomeTools.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\SomeTools.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="Display.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\Display.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="FrameGrabber.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\FrameGrabber.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="IPCamera.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\IPCamera.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="MainForm.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\MainForm.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="miscCameraControl.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\miscCameraControl.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="miscDVCommands.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\miscDVCommands.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="miscSpecialControl.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\miscSpecialControl.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="miscVideoControl.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\miscVideoControl.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="miscVideoQuality.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\miscVideoQuality.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="MotionDetection.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\MotionDetection.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="NetworkStreaming.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\NetworkStreaming.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="Overlays.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\Overlays.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="Player.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\Player.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="Recording.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\Recording.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="Reencoding.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\Reencoding.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="SnapForm.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\SnapForm.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="TransparentWindow.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\TransparentWindow.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="TVTuner.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\TVTuner.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="VideoFromJPEGsOrBitmaps.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\VideoFromJPEGsOrBitmaps.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="VideoProcessing.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\VideoProcessing.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="VideoSource.resx" Description="File successfully backed up as H:\TVideoGrabber\Shareware\VS.Net(DLL)\DEMOS\C#\MainDemo\Backup\VideoSource.resx">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="MainDemo.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MainDemo" Source="MainDemo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MainDemo" Source="MainDemo.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

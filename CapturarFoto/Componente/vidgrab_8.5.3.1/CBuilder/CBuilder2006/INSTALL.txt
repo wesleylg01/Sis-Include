@@ -1,0 +1,96 @@
+
+ TVideoGrabber Video Capture and Media Player component
+ ------------------------------------------------------
+
+ version        : v8.5 build 8.5.3.1
+ date           : October 10, 2011
+
+ status         : Evaluation package
+ limitations    : nag-screens, stops after a random time
+
+ system req.    : Windows 7 / Windows Vista / XP
+                  2Gb memory or more
+
+ home page      : http://www.datastead.com
+ contact        : contact@datastead.com
+ support        : support@datastead.com
+ purchase       : http://www.datastead.com/vidgrab/order.htm
+ 
+
+ USER GUIDE
+ ==========
+
+ The user guide is located in the "TVideoGrabber.chm" file of the \Help folder.
+
+
+ PACKAGE INSTALL
+ ===============
+
+ NOTE: if you get an error when installing TVideoGrabber on the component palette, probably that you
+ need to apply a C++Builder update pack (see details in the "UPDATE PACKS" chapter below).
+
+
+ - Exit C++Builder,
+
+ - unzip the package archive to a folder of your choice (e.g. c:\vidgrab). Be sure to unzip 
+   the full directory structure (using WinZip check "use folders names" ).
+
+ - according to your version of C++Builder, copy all the CBuilder\*.* archive files to your
+   ...\Borland\CBuilder?\Imports directory,
+
+ - run C++Builder,
+
+ - select Component | Install packages,
+
+ - press the "Add" button,
+
+ - locate the TVidGrab.bpl file in the \Borland\...\Imports directory and select it,
+
+ - Select Open
+
+ - Click "Ok"
+
+ - Check the "Datastead" tab in the right of the component palette. The TVideoGrabber object should 
+   have been added.
+
+
+ CONTEXT SENSITIVE HELP INSTALL
+ ==============================
+
+ Read the HelpInstall.txt file included in the "Help" folder of this package
+
+
+ C++BUILDER UPDATE PACKS
+ ==================================
+  
+ TVideoGrabber has been compiled with the latest update packs applied on C++Builder.
+
+
+ If you get an error when installing TVideoGrabber on the component palette, e.g. like:
+
+ "the procedure entry point ... procedure$qri ... could not be located in library Vcl40.bpl"
+
+ you need to apply the latest BORLAND update packs on your C++Builder version.
+
+
+ visit the following page at Borland to download the latest update packs:
+ http://info.borland.com/devsupport/bcppbuilder/
+
+
+ INSTALL TROUBLESHOOTING:
+ =======================
+
+ "TVidGrab.??? file not found" error when compiling or linking a TVideoGrabber project:
+ - go to Tools | Environment Options | Library, and check that there is ";$(BCB)\Imports (C++Builder)"
+   in the Library path, otherwise add it at the end of the edit field.  
+
+ - go to Project | Options | Packages, check "Build with runtime package", go to the end of the 
+   packages edit field, remove ";TVidGrab", and then uncheck "Build with runtime package". 
+
+
+ PACKAGE UNZIP:
+ =============
+ When unzipping the package, the unzip tool must re-create the package's subdirectories. By using WinZip, 
+ be sure to enable the "use folder names" option, otherwise files having the same name will overwrite themselves.
+
+

@@ -1,0 +1,357 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{9A90BB68-A4EE-4068-BA77-4AF2A066B1DC}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "MainDemo_VS2003"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "MainDemo_VS2003"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE;VS2003"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE;VS2003"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "C:\Windows\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "VideoGrabberNET1.1"
+                    AssemblyName = "VideoGrabberNET1.1"
+                    HintPath = "..\..\..\VideoGrabberNET1.1.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "C:\Windows\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "C:\Windows\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "C:\Windows\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "C:\Windows\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "stdole"
+                    Guid = "{00020430-0000-0000-C000-000000000046}"
+                    VersionMajor = "2"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Audio.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Audio.resx"
+                    DependentUpon = "Audio.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Display.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Display.resx"
+                    DependentUpon = "Display.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FrameGrabber.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FrameGrabber.resx"
+                    DependentUpon = "FrameGrabber.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "InsetForms.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "IPCamera.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "IPCamera.resx"
+                    DependentUpon = "IPCamera.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MainForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MainForm.resx"
+                    DependentUpon = "MainForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "miscCameraControl.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "miscCameraControl.resx"
+                    DependentUpon = "miscCameraControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "miscDVCommands.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "miscDVCommands.resx"
+                    DependentUpon = "miscDVCommands.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "miscSpecialControl.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "miscSpecialControl.resx"
+                    DependentUpon = "miscSpecialControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "miscVideoControl.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "miscVideoControl.resx"
+                    DependentUpon = "miscVideoControl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "miscVideoQuality.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "miscVideoQuality.resx"
+                    DependentUpon = "miscVideoQuality.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MotionDetection.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MotionDetection.resx"
+                    DependentUpon = "MotionDetection.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "NetworkStreaming.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NetworkStreaming.resx"
+                    DependentUpon = "NetworkStreaming.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Overlays.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Overlays.resx"
+                    DependentUpon = "Overlays.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Player.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Player.resx"
+                    DependentUpon = "Player.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Recording.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Recording.resx"
+                    DependentUpon = "Recording.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Reencoding.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Reencoding.resx"
+                    DependentUpon = "Reencoding.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SnapForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SnapForm.resx"
+                    DependentUpon = "SnapForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "TransparentWindow.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TransparentWindow.resx"
+                    DependentUpon = "TransparentWindow.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "TVTuner.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TVTuner.resx"
+                    DependentUpon = "TVTuner.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "VideoFromJPEGsOrBitmaps.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "VideoFromJPEGsOrBitmaps.resx"
+                    DependentUpon = "VideoFromJPEGsOrBitmaps.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "VideoProcessing.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "VideoProcessing.resx"
+                    DependentUpon = "VideoProcessing.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "VideoSource.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "VideoSource.resx"
+                    DependentUpon = "VideoSource.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "VidGrabUtil.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "VidGrabUtil.resx"
+                    DependentUpon = "VidGrabUtil.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

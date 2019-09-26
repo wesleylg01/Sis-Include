@@ -1,0 +1,46 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ShellAPI, StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    OpenDialog1: TOpenDialog;
+    Button2: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+// se for txt ele cria qr... se for diferente ele lê arquivo
+ShellExecute(handle,'open',Pchar(ExtractFilePath(Application.ExeName)+'\appConversor\conversor.jar'), Pchar(ExtractFilePath(Application.ExeName)+'\txtFonte\fonte.txt'),'',SW_SHOWNORMAL);
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+var caminho: string;
+begin
+if OpenDialog1.Execute then
+   caminho:= OpenDialog1.FileName;
+
+// se for txt ele cria qr... se for diferente ele lê arquivo
+ShellExecute(handle,'open',Pchar(ExtractFilePath(Application.ExeName)+'\appConversor\conversor.jar'), Pchar(ExtractFilePath(Application.ExeName)+'\txtFonte\fonte.txt'),'',SW_SHOWNORMAL);
+Showmessage('Arquivos qrCode convertido no caminho '+Pchar(ExtractFilePath(Application.ExeName)+'qrCode\'));
+end;
+
+end.

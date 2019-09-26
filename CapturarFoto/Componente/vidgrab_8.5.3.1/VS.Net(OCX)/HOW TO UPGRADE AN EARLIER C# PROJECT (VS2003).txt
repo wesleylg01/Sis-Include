@@ -1,0 +1,64 @@
+
+ If you have developped a project with an earlier version of Vidgrab_NET.ocx
+ and you get an error when opening or rebuilding your project after 
+ registering the new Vidgrab_NET.ocx, like:
+
+ . axVidgrab_NET reference not found 
+ . unable to get the window handle ... WindowLess ActiveX controls are not supported
+
+ proceed as follows:
+ ------------------
+
+ - exit Visual Studio
+
+ - delete the "bin" and "obj" subfolders under your project's folder
+
+ - open in Notepad you project's ".csproj" file
+
+ - locate the reference names that contains "vidgrab_NET" (2 references)
+
+ - modify the "Guid=..." line as follows:
+   Guid = "{8945174D-2095-4007-BFC7-62ECB1EAFA9A}"
+
+ - set VersionMajor="1" and VersionMinor="0"
+
+   
+   E.g.:
+ 
+    ... 
+                 <Reference
+                    Name = "vidgrab_NET"
+                    Guid = "{8945174D-2095-4007-BFC7-62ECB1EAFA9A}"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "Axvidgrab_NET"
+                    Guid = "{8945174D-2095-4007-BFC7-62ECB1EAFA9A}"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "aximp"
+                />
+   ... 
+
+
+ - save and close the ".csproj" file
+
+ - open in Notepad the "...Designer.cs" file of the form(s) that contain a TVideoGrabber component
+
+ - search for "OCXSTATE" strings, and comment all the "OCXSTATE" lines you find related to TVideoGrabber, e.g.
+
+    // this.axVideoGrabberNET1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axVideoGrabberNET1.OcxState")));
+
+ - save the "...Designer.cs" file
+
+ - reopen your project in Visual Studio
+
+ - close all the forms opened
+
+ - clean the current build (Build | Clean solution)
+
+ - then make a full rebuild

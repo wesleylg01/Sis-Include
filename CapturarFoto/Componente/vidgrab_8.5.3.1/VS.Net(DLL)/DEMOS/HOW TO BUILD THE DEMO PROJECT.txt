@@ -1,0 +1,51 @@
+
+ TVideoGrabber Video Capture and Media Player component
+ ------------------------------------------------------
+
+ version        : v8.5 build 8.5.3.1
+ date           : October 10, 2011
+
+
+ TO REBUILD THE MAINDEMO PROJECT 
+ ===============================
+ (or any other project using the .NET DLL version TVideoGrabber)
+
+
+ 1: INSTALL FIRST THE COMPONENT AS EXPLAINDED IN THE INSTALL.txt
+
+
+ 2:
+
+  C#.NET:
+
+   . open the MainDemo project
+
+   . in the "Solution Explorer, expand "Reference"
+
+   . if there is already an earlier TVideoGrabber reference, delete it
+
+   . right-click "Add Reference"
+
+   . locate and select VideoGrabberNET.dll 
+
+   . then make a full rebuild
+
+
+  VB.NET:
+
+   . open the MainDemo project
+
+   . in the "Solution Explorer", right-click on your project -> properties
+
+   . open on the "References" tab
+
+   . if there is already an earlier TVideoGrabber reference, delete it
+
+   . click "Add"
+
+   . locate and select VideoGrabberNET.dll 
+
+   . then make a full rebuild
+
+
+

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{603E53AE-5B62-4A92-841C-66734DE08F01}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MainDemo.MainForm</StartupObject>
+    <RootNamespace>MainDemo</RootNamespace>
+    <AssemblyName>MainDemo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MainDemo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MainDemo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="VideoGrabberNET4.0, Version=8.5.3.1, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\VideoGrabberNET4.0.dll</HintPath>
+    </Reference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="Audio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Display.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameGrabber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsetForms.vb" />
+    <Compile Include="IPCamera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainDemo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="miscCameraControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="miscDVCommands.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="miscSpecialControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="miscVideoControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="miscVideoQuality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modInsetForm.vb" />
+    <Compile Include="MotionDetection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetworkStreaming.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Overlays.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recording.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reencoding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnapForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransparentWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TVTuner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoFromJPEGsOrBitmaps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoProcessing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoSource.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VidGrabUtil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Audio.resx">
+      <DependentUpon>Audio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display.resx">
+      <DependentUpon>Display.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameGrabber.resx">
+      <DependentUpon>FrameGrabber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPCamera.resx">
+      <DependentUpon>IPCamera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainDemo.resx">
+      <DependentUpon>MainDemo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="miscCameraControl.resx">
+      <DependentUpon>miscCameraControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="miscDVCommands.resx">
+      <DependentUpon>miscDVCommands.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="miscSpecialControl.resx">
+      <DependentUpon>miscSpecialControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="miscVideoControl.resx">
+      <DependentUpon>miscVideoControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="miscVideoQuality.resx">
+      <DependentUpon>miscVideoQuality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MotionDetection.resx">
+      <DependentUpon>MotionDetection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetworkStreaming.resx">
+      <DependentUpon>NetworkStreaming.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overlays.resx">
+      <DependentUpon>Overlays.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player.resx">
+      <DependentUpon>Player.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recording.resx">
+      <DependentUpon>Recording.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reencoding.resx">
+      <DependentUpon>Reencoding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnapForm.resX">
+      <DependentUpon>SnapForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransparentWindow.resx">
+      <DependentUpon>TransparentWindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TVTuner.resx">
+      <DependentUpon>TVTuner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoFromJPEGsOrBitmaps.resx">
+      <DependentUpon>VideoFromJPEGsOrBitmaps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoProcessing.resx">
+      <DependentUpon>VideoProcessing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoSource.resx">
+      <DependentUpon>VideoSource.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

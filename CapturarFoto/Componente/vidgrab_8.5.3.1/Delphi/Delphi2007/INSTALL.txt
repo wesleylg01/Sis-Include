@@ -1,0 +1,107 @@
+
+ TVideoGrabber Video Capture and Media Player component
+ ------------------------------------------------------
+
+ version        : v8.5 build 8.5.3.1
+ date           : October 10, 2011
+
+ status         : Evaluation package
+ limitations    : nag-screens, stops after a random time
+
+ system req.    : Windows 7 / Windows Vista / XP
+                  2Gb memory or more
+
+ home page      : http://www.datastead.com
+ contact        : contact@datastead.com
+ support        : support@datastead.com
+ purchase       : http://www.datastead.com/vidgrab/order.htm
+ 
+
+ USER GUIDE
+ ==========
+
+ The user guide is located in the "TVideoGrabber.chm" file of the \Help folder.
+
+
+ PACKAGE INSTALL
+ ===============
+
+ NOTE: if you get an error when installing TVideoGrabber on the component palette, probably that you
+ need to apply a Delphi update pack (see details in the "UPDATE PACKS" chapter below).
+
+
+ - Exit Delphi,
+
+ - unzip the package archive to a folder of your choice (e.g. c:\vidgrab). Be sure to unzip 
+   the full directory structure (using WinZip check "use folders names" ).
+
+ - according to your version of Delphi, copy all the Delphi\*.* archive files to your
+   ...\Borland\Delphi?\Imports directory,
+
+ - run Delphi,
+
+ - select Component | Install packages,
+
+ - press the "Add" button,
+
+ - locate the TVidGrab.bpl file in the \Borland\...\Imports directory and select it,
+
+ - Select Open
+
+ - Click "Ok"
+
+ - Check the "Datastead" tab in the right of the component palette. The TVideoGrabber object should 
+   have been added.
+
+
+ CONTEXT SENSITIVE HELP INSTALL
+ ==============================
+
+ Read the HelpInstall.txt file included in the "Help" folder of this package
+
+
+ Delphi UPDATE PACKS
+ ==================================
+  
+ TVideoGrabber has been compiled with the latest update packs applied on Delphi.
+
+
+ If you get an error when installing TVideoGrabber on the component palette, e.g. like:
+
+ "the procedure entry point ... procedure$qri ... could not be located in library Vcl40.bpl"
+
+ you need to apply the latest BORLAND update packs on your Delphi version.
+
+
+ This problem has been reported especially with Delphi 4, where you need to apply "d4upd2.exe".
+
+ visit the following page at Borland to download the latest update packs:
+ http://info.borland.com/devsupport/delphi/downloads/index.html
+
+
+
+ INSTALL TROUBLESHOOTING:
+ =======================
+
+ "TVidGrab.??? file not found" error when compiling or linking a TVideoGrabber project:
+ - go to Tools | Environment Options | Library, and check that there is ";$(DELPHI)\Imports (Delphi)"
+   in the Library path, otherwise add it at the end of the edit field.  
+
+ - go to Project | Options | Packages, check "Build with runtime package", go to the end of the 
+   packages edit field, remove ";TVidGrab", and then uncheck "Build with runtime package". 
+
+
+ PACKAGE UNZIP:
+ =============
+ When unzipping the package, the unzip tool must re-create the package's subdirectories. By using WinZip, 
+ be sure to enable the "use folder names" option, otherwise files having the same name will overwrite themselves.
+
+
+ DELPHI 6 TRIAL: 
+ ==============
+
+ The trial version of Delphi 6 comes with a different DCU format than the 
+ real one. You can't use TVideoGrabber or other third party components in 
+ the trial, otherwise you will get the following error when trying to 
+ build the project:
+ Access violation at address nnnnnn in module dcc60.dll read of address nnnnn.

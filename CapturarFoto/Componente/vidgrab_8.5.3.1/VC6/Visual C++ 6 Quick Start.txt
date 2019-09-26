@@ -1,0 +1,48 @@
+
+ Visual C++ 6 quick start guide
+ ==============================
+
+ PLACING A NEW TVIDEOGRABBER ON A FORM
+ ------------------------------------- 
+
+ - create a new MFC Appwizard (EXe) application (or re-open your existing application)
+
+ - right-click on form where the TVideoGrabber control must be place
+
+ - click "insert ActiveX control",
+
+ - browse the list and select "VideoGrabber VC6 Control",
+
+ - click "Ok"
+
+ Now you should see the TVideoGrabber component on the form. 
+
+
+
+ CREATING THE WRAPPER FOR THE TVIDEOGRABBER COMPONENT
+ ----------------------------------------------------
+ 
+ - right-click on the form
+
+ - click "Class wizard"
+
+ - click "Add variable..."
+
+ - a popup appears that says:
+    "the TVideoGrabber control has not been inserted into the project" 
+    "Developer Studio will do it now and generate a C++ wrapper class for it"
+
+ - click "OK"
+
+ - when the "Confirm Classes" dialog appears, click "OK"
+
+ - when the "Add Member Variable " dialog appears, enter a name for the variable (e.g. "m_videograbber"), click "OK"
+
+ - click "OK" to close the dialog
+
+ - make a full rebuild of the the project
+
+ - now you can reference the component by its variable name, e.g.:
+   {
+      m_videograbber.StartPreview();
+   }

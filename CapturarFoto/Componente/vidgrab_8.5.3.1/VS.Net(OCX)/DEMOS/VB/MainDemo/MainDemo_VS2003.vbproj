@@ -1,0 +1,361 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{3A768C01-169F-48B8-A9F4-602E8C0A61EF}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "MainDemo"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "MainDemo"
+                StartupObject = "MainDemo.MainForm"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "VS2003=true"
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "VS2003=true"
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "stdole"
+                    Guid = "{00020430-0000-0000-C000-000000000046}"
+                    VersionMajor = "2"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "Vidgrab_NET"
+                    Guid = "{8945174D-2095-4007-BFC7-62ECB1EAFA9A}"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "AxVidgrab_NET"
+                    Guid = "{8945174D-2095-4007-BFC7-62ECB1EAFA9A}"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "aximp"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Diagnostics" />
+                <Import Namespace = "System.Windows.Forms" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Audio.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Audio.resx"
+                    DependentUpon = "Audio.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Display.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Display.resx"
+                    DependentUpon = "Display.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FrameGrabber.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FrameGrabber.resx"
+                    DependentUpon = "FrameGrabber.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "InsetForms.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "IPCamera.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "IPCamera.resx"
+                    DependentUpon = "IPCamera.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MainDemo.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MainDemo.resx"
+                    DependentUpon = "MainDemo.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "miscCameraControl.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "miscCameraControl.resx"
+                    DependentUpon = "miscCameraControl.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "miscDVCommands.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "miscDVCommands.resx"
+                    DependentUpon = "miscDVCommands.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "miscSpecialControl.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "miscSpecialControl.resx"
+                    DependentUpon = "miscSpecialControl.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "miscVideoControl.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "miscVideoControl.resx"
+                    DependentUpon = "miscVideoControl.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "miscVideoQuality.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "miscVideoQuality.resx"
+                    DependentUpon = "miscVideoQuality.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "modInsetForm.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MotionDetection.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MotionDetection.resx"
+                    DependentUpon = "MotionDetection.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "NetworkStreaming.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NetworkStreaming.resx"
+                    DependentUpon = "NetworkStreaming.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Overlays.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Overlays.resx"
+                    DependentUpon = "Overlays.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Player.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Player.resx"
+                    DependentUpon = "Player.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Recording.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Recording.resx"
+                    DependentUpon = "Recording.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Reencoding.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Reencoding.resx"
+                    DependentUpon = "Reencoding.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SnapForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SnapForm.resX"
+                    DependentUpon = "SnapForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "TransparentWindow.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TransparentWindow.resx"
+                    DependentUpon = "TransparentWindow.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "TVTuner.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TVTuner.resx"
+                    DependentUpon = "TVTuner.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "VideoFromJPEGsOrBitmaps.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "VideoFromJPEGsOrBitmaps.resx"
+                    DependentUpon = "VideoFromJPEGsOrBitmaps.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "VideoProcessing.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "VideoProcessing.resx"
+                    DependentUpon = "VideoProcessing.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "VideoSource.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "VideoSource.resx"
+                    DependentUpon = "VideoSource.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "VidGrabUtil.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

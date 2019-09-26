@@ -1,0 +1,86 @@
+unit UConversao;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtDlgs, QuricolCode, ShlObj, ExtCtrls, Buttons, frxClass;
+
+type
+  TForm1 = class(TForm)
+    FileOpenDialog1: TFileOpenDialog;
+    Memo1: TMemo;
+    Image1: TImage;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    frxReport1: TfrxReport;
+    Edit1: TEdit;
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.SpeedButton1Click(Sender: TObject);
+var txt: TStringList;
+begin
+if FileOpenDialog1.Execute then
+   begin
+     txt:= TStringList.Create;
+     txt.LoadFromFile(FileOpenDialog1.FileName);
+     memo1.Lines:=txt;
+   end;
+end;
+
+procedure TForm1.SpeedButton2Click(Sender: TObject);
+ var
+  B : TBitmap;
+  textoAtual: String;
+  I, contador, limite: Integer;
+begin
+if memo1.Text = '' then
+   begin
+   Application.MessageBox('Favor carregar um arquivo antes de conver!','Atenção.',MB_ICONWARNING+MB_OK);
+   exit;
+   end;
+
+
+contador:=1;
+limite:= StrToInt(Edit1.Text);
+  for I := 0 to Memo1.Lines.Count -1 do
+      begin
+      textoAtual:= textoAtual + memo1.Lines.Strings[i];
+      if Length(textoAtual) >=limite then
+         begin
+         B := TQRCode.GetBitmapImage(textoAtual, 10, 3);
+         image1.Picture.Bitmap.Assign(B);
+         B.Free;
+
+         Image1.Picture.Bitmap.SaveToFile(ExtractFilePath(Application.ExeName)+'qrCodeTemp\'+IntToStr(contador)+'.bmp');
+         TfrxPictureView(frxReport1.FindObject('Picture'+IntToStr(contador))).Picture.LoadFromFile(ExtractFilePath(Application.ExeName)+'qrCodeTemp\'+IntToStr(contador)+'.bmp');
+
+         inc(contador);
+         textoAtual:='';
+         end;
+      end;      // salva o restante do texto que não ultrapassou os 1100 caracter
+      B := TQRCode.GetBitmapImage(textoAtual, 10, 3);
+         image1.Picture.Bitmap.Assign(B);
+         B.Free;
+
+         Image1.Picture.Bitmap.SaveToFile(ExtractFilePath(Application.ExeName)+'qrCodeTemp\'+IntToStr(contador)+'.bmp');
+         TfrxPictureView(frxReport1.FindObject('Picture'+IntToStr(contador))).Picture.LoadFromFile(ExtractFilePath(Application.ExeName)+'qrCodeTemp\'+IntToStr(contador)+'.bmp');
+         inc(contador);
+         textoAtual:='';
+ frxReport1.Showreport;
+end;
+
+end.

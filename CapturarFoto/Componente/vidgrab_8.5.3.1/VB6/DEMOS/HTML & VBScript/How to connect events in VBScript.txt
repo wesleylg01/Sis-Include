@@ -1,0 +1,81 @@
+To connect an event in VB script, proceed as follows:
+
+(let's take as sample the OnAuthenticationNeeded event)
+
+- look at the event to get the parameter names of the events (there are 
+  several ways to retrieve them, e.g. search for "AuthenticationNeeded" 
+  in the "vidgrab_vc6.tlh" file included under \VC6\Interfaces)
+
+- if your HTML embedded OCX is named "VideoGrabber" and the event you want 
+  to create is "OnAuthenticationNeeded", create a Sub named by the 
+  contatenation of the object and event names separated a "_", e.g.:
+
+  Sub VideoGrabber_OnAuthenticationNeeded 
+
+  and just specify the parameters names, e.g.:
+
+  Sub VideoGrabber_OnAuthenticationNeeded  (AuthenticationType, Realm, Server, Username, Password)
+     ...
+  End Sub
+
+By this way the event will be wrapped automatically to the OCX by its name.
+
+
+Sample code of this implementation in a HTML page:
+
+<html>
+
+<head>
+
+<script language="VBScript">
+
+Sub StartPreview
+   VideoGrabber.VideoSource = 4  ' vs_IPCamera = 4, you can find the values of the constants in the 
+   VideoGrabber.IPCameraUrl = document.all("edtIPCameraUrl").Value
+   VideoGrabber.StartPreview
+End Sub
+
+Sub VideoGrabber_OnAuthenticationNeeded (AuthenticationType, Realm, Server, Username, Password)
+   Username = document.all("edtUserName").Value 
+   Password = document.all("edtPassword").Value 
+end sub
+
+Sub VideoGrabber_OnPreviewStarted
+   MsgBox "Preview started!"
+end sub
+
+
+</script >
+
+</head>
+
+<body>
+
+<form>
+ <table border="0">
+  <tr>
+    <td>IP camera URL:</td>
+    <td><INPUT TYPE="text" VALUE="" name = "edtIPCameraUrl" size = "100"> </td>
+  </tr>
+  <tr>
+    <td>username: </td>
+    <td><INPUT TYPE="text" name = "edtUserName" size = "20"> </td>
+  </tr>
+  <tr>
+    <td>password:</td>
+    <td><INPUT TYPE="password" name = "edtPassword" size = "20"> </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><INPUT TYPE="button" VALUE="Start preview" onClick="StartPreview" name="BtnStartPreview"> </td>
+  </tr>
+ </table>
+  </FORM> 
+
+<OBJECT ID="VideoGrabber" WIDTH = 323 HEIGHT = 230
+    CLASSID="CLSID:B7A1B3FE-59CB-4C8E-81CC-FFC6EC6834DE">
+</OBJECT>
+
+</body>
+
+</html>

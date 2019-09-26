@@ -1,0 +1,65 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>TVideoGrabber simple demo</title>
+
+<script language="VBScript">
+
+Sub StartPreview
+   VideoGrabber.StopPreview
+   VideoGrabber.VideoDevice = CInt (document.all("VideoDeviceIndex").Value)
+   VideoGrabber.StartPreview
+End Sub
+
+Sub NearestSize (VideoWidth, VideoHeight)
+   VideoGrabber.UseNearestVideoSize VideoWidth, VideoHeight, false
+end sub
+
+Sub StopPreview
+   VideoGrabber.StopPreview
+End Sub
+
+Sub VideoGrabber_OnPreviewStarted
+   MsgBox "Preview started!"
+end sub
+
+Sub VideoGrabber_OnResize
+   VideoGrabber.Width  = VideoGrabber.VideoWidth
+   VideoGrabber.Height = VideoGrabber.VideoHeight
+end sub
+
+</script >
+
+</head>
+
+<body style="font-family: Verdana; font-size: 10 pt">
+
+<p><b><font size="3">TVideoGrabber ActiveX component</font></b></p>
+
+<p>This is a simple demo of TVideoGrabber embedded within a HTML page</p>
+
+
+<form>
+ Video device index: <INPUT TYPE="text" VALUE="0" name = "VideoDeviceIndex" size = "5"> <BR><BR>
+ <INPUT TYPE="button" VALUE="Start preview" onClick="StartPreview"> <BR><BR>
+ <INPUT TYPE="button" VALUE="160x120 nearest size" onClick="NearestSize 160, 120"> <BR><BR> 
+ <INPUT TYPE="button" VALUE="320x240 nearest size" onClick="NearestSize 320, 240"> <BR><BR> 
+ <INPUT TYPE="button" VALUE="640x480 nearest size" onClick="NearestSize 640, 480"> <BR><BR> 
+ <INPUT TYPE="button" VALUE="Stop Preview" onClick="StopPreview"> <BR><BR>
+  </FORM> 
+
+<p>&nbsp;</p>
+
+<OBJECT ID="VideoGrabber" WIDTH = 323 HEIGHT = 230
+    CLASSID="CLSID:B7A1B3FE-59CB-4C8E-81CC-FFC6EC6834DE">
+</OBJECT>
+
+
+
+</body>
+
+</html>

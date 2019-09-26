@@ -1,0 +1,91 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>TVideoGrabber simple demo</title>
+
+<script language="VBScript">
+   Function IsVideoGrabberCreated ()
+      IsVideoGrabberCreated = not (document.getElementById("VideoGrabber") is nothing)
+   End Function
+
+   sub CreateVideoGrabber() 
+      if not IsVideoGrabberCreated then
+         dim m_vidgrab 
+         set m_vidgrab = document.createElement("object") 
+         with m_vidgrab 
+            .classID = "clsid:B7A1B3FE-59CB-4C8E-81CC-FFC6EC6834DE" 
+            .id = "VideoGrabber" 
+            .width = 320
+            .height = 240
+         end with
+         document.body.appendChild m_vidgrab
+         set m_vidgrab = nothing
+      end if
+   end sub 
+
+   Sub RemoveVideoGrabber
+      if IsVideoGrabberCreated then
+         document.body.removeChild document.getElementById("VideoGrabber")
+      end if
+   End Sub
+   
+   Sub StartPreview
+      if IsVideoGrabberCreated then
+         if CInt (document.all("VideoDeviceIndex").Value) >= VideoGrabber.VideoDevicesCount then
+            MsgBox "there are only " & VideoGrabber.VideoDevicesCount & " video capture devices on this platform"
+         else
+            VideoGrabber.StopPreview
+            VideoGrabber.VideoDevice = CInt (document.all("VideoDeviceIndex").Value)
+            VideoGrabber.StartPreview
+         end if
+      end if
+   End Sub
+
+   Sub NearestSize (VideoWidth, VideoHeight)
+      if IsVideoGrabberCreated then
+         VideoGrabber.UseNearestVideoSize VideoWidth, VideoHeight, true
+         VideoGrabber.Width  = VideoWidth
+         VideoGrabber.Height = VideoHeight
+      end if
+   end sub
+  
+   Sub StopPreview
+      if IsVideoGrabberCreated then
+         VideoGrabber.StopPreview
+      end if
+   End Sub
+ 
+</script> 
+
+<script language="VBScript" for="VideoGrabber" event="OnPreviewStarted"> 
+   MsgBox "Preview started!"
+</script> 
+
+</head> 
+<body style="font-family: Verdana; font-size: 10 pt">
+
+<p><b><font size="3">TVideoGrabber ActiveX component</font></b></p>
+
+<p>This is a simple demo of TVideoGrabber dynamically created or removed from a
+HTML page</p>
+
+
+<form>
+ Video device index: <INPUT TYPE="text" VALUE="0" name = "VideoDeviceIndex" size = "5"> <BR><BR>
+ <INPUT TYPE="button" VALUE="Add TVideoGrabber component" onClick="CreateVideoGrabber"> <BR><BR>
+ <INPUT TYPE="button" VALUE="Start preview" onClick="StartPreview"> <BR><BR>
+ <INPUT TYPE="button" VALUE="160x120 nearest size" onClick="NearestSize 160, 120"> <BR><BR> 
+ <INPUT TYPE="button" VALUE="320x240 nearest size" onClick="NearestSize 320, 240"> <BR><BR> 
+ <INPUT TYPE="button" VALUE="640x480 nearest size" onClick="NearestSize 640, 480"> <BR><BR> 
+ <INPUT TYPE="button" VALUE="Stop Preview" onClick="StopPreview"> <BR><BR>
+ <INPUT TYPE="button" VALUE="Remove TVideoGrabber component" onClick="RemoveVideoGrabber"> <BR><BR> 
+  </FORM> 
+
+
+</body>
+
+</html>
